@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css_2021/main.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/media.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/swiper.min.css"/>
+    <script src="../js_2021/jquery.js"></script>
+    <script src="../js_2021/swiper.min.js"></script>
+    <script src="../js_2021/fastclick.js"></script>
+    <!--[if IE]>
+    <script src="../js_2021/html5shiv.min.js"></script>
+    <script src="../js_2021/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js_2021/main.js?v=1.9"></script>
+    <script src="../js_2021/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+<!--header s-->
+<div class="header">
+    <a class="logo" href="index.html"><img src="../images_2021/logo.png" alt=""/></a>
+    <div class="header-con">
+        <div class="nav-box">
+            <ul class="nav clear">
+                <li><a class="nav-yi" href="#"><span>首页</span></a></li>
+                <li>
+                    <a class="nav-yi" href="#"><span>走进无限极</span></a>
+                    <div class="nav-er">
+                        <a href="#">无限极全球</a>
+                        <a href="#">无限极中国</a>
+                        <a href="#">公司使命</a>
+                        <a href="#">文化与理念</a>
+                        <a href="#">无限极的故事</a>
+                        <a href="#">董事长寄语</a>
+                    </div>
+                </li>
+                <li><a class="nav-yi" href="#"><span>品牌与产品</span></a></li>
+                <li>
+                    <a class="nav-yi" href="#"><span>事业机会</span></a>
+                    <div class="nav-er">
+                        <a href="#">八大优势</a>
+                        <a href="#">科研实力</a>
+                        <a href="#">海外培训</a>
+                        <a href="#">从业规范</a>
+                        <a href="#">极易学</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>公司动态</span></a>
+                    <div class="nav-er">
+                        <a href="#">公司新闻</a>
+                        <a href="#">媒体报道</a>
+                        <a href="#">分公司风采</a>
+                        <a href="#">打击假冒伪劣</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>社会责任</span></a>
+                    <div class="nav-er">
+                        <a href="#">社会责任体系</a>
+                        <a href="#">公益动态</a>
+                        <a href="#">思利及人公益基金会</a>
+                        <a href="#">公益大事记</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>马上购买</span></a>
+                    <div class="nav-er">
+                        <a href="#">全球购</a>
+                        <a href="javascript:;">微商城
+                            <div class="nav-code">
+                                <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header-area clear">
+            <div class="entry fl">
+                <!--<a href="#"><img src="../images_2021/e1.png" alt=""/><span>售后</span></a>-->
+                <a href="#"><img src="../images_2021/e3.png" alt=""/><span>会员</span></a>
+                <a href="#"><img src="../images_2021/e2.png" alt=""/><span>店铺</span></a>
+            </div>
+            <div class="language fr">
+                <div class="i"></div>
+                <div class="earth"></div>
+                <a class="language-val" href="javascript:;">中</a>
+                <div class="language-box">
+                    <a href="javascript:;">繁</a>
+                    <a href="javascript:;">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-handler" class="menu-handler">
+        <span class="burger burger-1 trans"></span>
+        <span class="burger burger-2 trans-fast"></span>
+        <span class="burger burger-3 trans"></span>
+    </div>
+</div>
+<!--header e-->
+<!--banner s-->
+<!--banner s-->
+<div class="banner relative">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/shop-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/shop-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/shop-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-dot text-center bandot"></div>
+</div>
+<script>
+    var bannerleng=$(".banner .swiper-slide").length;
+    var banner=null;
+    if(bannerleng>1){
+        banner = new Swiper('.banner .swiper-container',{
+            loop:true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:800,
+            pagination : '.bandot',
+            paginationClickable :true,
+        })
+    }else{
+        $(".bandot").hide();
+    }
+</script>
+<!--banner e-->
+
+<div class="padding-tb60 store-box">
+    <div class="width90">
+        <div class="title24 text-center wow slideUp">
+            <h2>各地店铺</h2>
+            <span>Stores everywhere</span>
+            <div class="i"></div>
+        </div>
+    </div>
+    <div class="width90">
+        <div class="tab shop-tab clear text-center">
+            <a class="fl active" href="javascript:;">附近店铺</a>
+            <a class="fr" href="javascript:;">各地店铺</a>
+        </div>
+    </div>
+    <div class="stores margin-b35">
+        <div class="width90">
+            <div class="stores-top padding50">
+                <div class="stores-warp">
+                    <div class="neidi"><img src="../images_2021/store.png" alt=""/><h3>专卖店搜索</h3><span>（中国内地）</span></div>
+                    <div class="select-box clear">
+                        <div class="select-list">
+                            <select class="bx-border" id="s_province" name="s_province">
+                                <option value="省份">省份</option>
+                            </select>
+                        </div>
+                        <div class="select-list">
+                            <select class="bx-border" id="s_city" name="s_city">
+                                <option value="城市">城市</option>
+                            </select>
+                        </div>
+                        <div class="select-list">
+                            <select class="bx-border" id="s_county" name="s_county">
+                                <option value="区/县">区/县</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a class="sure">确定</a>
+                </div>
+            </div>
+            <div class="stores-map relative clear">
+                <div id="shopMap" class="map"></div>
+                <div class="address-box fr">
+                    <div class="address-warp">
+                        <!--附近店铺 s-->
+                        <div class="tabs active">
+                            <div class="address-top">
+                                <img src="../images_2021/store.png" alt=""/>
+                                <h4>共搜索到门店 <span>5</span> 家</h4>
+                            </div>
+                            <div class="map-list scrollBar15">
+                                <ul>
+                                    <li class="active" data-j="113.325024" data-w="23.134601">
+                                        <h5>广州服务中心</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-22645786</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区黄埔大道西33号三新大厦首层</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.32561" data-w="23.132752">
+                                        <h5>彭焰的体验空间</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：18578654838</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区珠江新城华穗路406号之二保利克洛维中景大厦A座1113室</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.339111" data-w="23.135728">
+                                        <h5>姚燕群的专卖店</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-87514031，13660280992</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区南二路六运七街10号101房</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li class="active" data-j="113.325024" data-w="23.134601">
+                                        <h5>广州服务中心</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-22645786</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区黄埔大道西33号三新大厦首层</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.32561" data-w="23.132752">
+                                        <h5>彭焰的体验空间</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：18578654838</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区珠江新城华穗路406号之二保利克洛维中景大厦A座1113室</p>
+                                        <div class="i"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--附近店铺 e-->
+                        <!--各地店铺 s-->
+                        <div class="tabs">
+                            <div class="address-top">
+                                <img src="../images_2021/store.png" alt=""/>
+                                <h4>共搜索到门店 <span>31</span> 家</h4>
+                            </div>
+                            <div class="map-list scrollBar15">
+                                <ul>
+                                    <li class="active" data-j="113.325024" data-w="23.134601">
+                                        <h5>广州服务中心</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-22645786</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区黄埔大道西33号三新大厦首层</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.32561" data-w="23.132752">
+                                        <h5>彭焰的体验空间</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：18578654838</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区珠江新城华穗路406号之二保利克洛维中景大厦A座1113室</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.339111" data-w="23.135728">
+                                        <h5>姚燕群的专卖店</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-87514031，13660280992</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区南二路六运七街10号101房</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li class="active" data-j="113.325024" data-w="23.134601">
+                                        <h5>广州服务中心</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-22645786</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区黄埔大道西33号三新大厦首层</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.32561" data-w="23.132752">
+                                        <h5>彭焰的体验空间</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：18578654838</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区珠江新城华穗路406号之二保利克洛维中景大厦A座1113室</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.339111" data-w="23.135728">
+                                        <h5>姚燕群的专卖店</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-87514031，13660280992</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区南二路六运七街10号101房</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li class="active" data-j="113.325024" data-w="23.134601">
+                                        <h5>广州服务中心</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-22645786</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区黄埔大道西33号三新大厦首层</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.32561" data-w="23.132752">
+                                        <h5>彭焰的体验空间</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：18578654838</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区珠江新城华穗路406号之二保利克洛维中景大厦A座1113室</p>
+                                        <div class="i"></div>
+                                    </li>
+                                    <li data-j="113.339111" data-w="23.135728">
+                                        <h5>姚燕群的专卖店</h5>
+                                        <p><img src="../images_2021/lx02.png" alt=""/>电话：020-87514031，13660280992</p>
+                                        <p class="shop-add"><img src="../images_2021/lx05.png" alt=""/>地址：广东省广州市天河区南二路六运七街10号101房</p>
+                                        <div class="i"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--各地店铺 e-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer s-->
+<div class="footer">
+    <div class="width90">
+        <div class="footer-top relative">
+            <img class="footer-logo" src="../images_2021/logo-fff.png" alt=""/>
+            <div class="footer-nav clear">
+                <dl>
+                    <dt>走进无限极<i></i></dt>
+                    <dd><a href="#">无限极全球</a></dd>
+                    <dd><a href="#">无限极中国</a></dd>
+                    <dd><a href="#">公司使命</a></dd>
+                    <dd><a href="#">董事长寄语</a></dd>
+                </dl>
+                <dl>
+                    <dt>品牌与产品<i></i></dt>
+                    <dd><a href="#">无限极</a></dd>
+                    <dd><a href="#">养固健</a></dd>
+                    <dd><a href="#">萃雅</a></dd>
+                    <dd><a href="#">心维雅</a></dd>
+                    <dd><a href="#">植雅</a></dd>
+                    <dd><a href="#">享优乐</a></dd>
+                    <dd><a href="#">帮得佳</a></dd>
+                </dl>
+                <dl>
+                    <dt>事业机会<i></i></dt>
+                    <dd><a href="#">八大优势</a></dd>
+                    <dd><a href="#">科研实力</a></dd>
+                    <dd><a href="#">海外培训</a></dd>
+                    <dd><a href="#">从业规范</a></dd>
+                    <dd><a href="#">极易学</a></dd>
+                </dl>
+                <dl>
+                    <dt>公司动态<i></i></dt>
+                    <dd><a href="#">公司新闻</a></dd>
+                    <dd><a href="#">媒体报道</a></dd>
+                    <dd><a href="#">分公司风采</a></dd>
+                    <dd><a href="#">打击假冒伪劣</a></dd>
+                </dl>
+                <dl>
+                    <dt>社会责任<i></i></dt>
+                    <dd><a href="#">社会责任体系</a></dd>
+                    <dd><a href="#">公益动态</a></dd>
+                    <dd><a href="#">思利及人公益基金会</a></dd>
+                    <dd><a href="#">公益大事记</a></dd>
+                </dl>
+                <dl>
+                    <dt>马上购买<i></i></dt>
+                    <dd><a href="#">全球购</a></dd>
+                    <dd>
+                        <a href="javascript:;">微商城
+                            <div class="nav-code">
+                                <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                            </div>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务<i></i></dt>
+                    <dt>各地店铺<i></i></dt>
+                    <dt>联系我们 <i></i></dt>
+                </dl>
+                <dl>
+                    <dt>会员入口<i></i></dt>
+                    <dt>企业招聘<i></i></dt>
+                </dl>
+            </div>
+            <div class="kslj">
+                <h3>快速链接</h3>
+                <div class="kslj1">
+                    <a class="a1 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极公众号</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极公众号</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a3" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-wb.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极微博</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a6" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-dy.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极抖音号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a9" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-sph.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极视频号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a10 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极小程序</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极小程序</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="ks-app" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极APP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a class="appxia" href="#">商城app下载</a>
+            </div>
+        </div>
+        <div class="footer-bot clear">
+            <div class="fr footer-bot-b">
+                <div class="footer-link">
+                    <a href="#">李锦记健康产品集团</a><span>|</span>
+                    <a href="#">国家市场监督管理总局</a><span>|</span>
+                    <a href="#">产品批次报告查询</a><span>|</span>
+                    <a href="#">国际联网备案登记证书</a>
+                    <br/>
+                    <a href="#">直销信息披露</a><span>|</span>
+                    <a href="#">保健食品注册信息查询</a><span>|</span>
+                    <a href="#">化妆品注册与备案信息查询</a>
+                </div>
+                <div class="bq">
+                    <span>版权所有©2017 无限极（中国）</span><a href="#">[粤ICP备05041458号]</a><a href="#">粤公网安备44010602005995号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="fixed-right">
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-gzh.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极公众号</p>
+                </div>
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极公众号</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-wb.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-wb.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极微博</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-dy.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-dy.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极抖音号</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-sph.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-sph.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极视频号</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-xcx.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极小程序</p>
+                </div>
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极小程序</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-app.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极APP</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+</ul>
+<!--footer e-->
+<script type="text/javascript" src="../js_2021/area.js"></script>
+<script type="text/javascript">
+    _init_area();
+    $('#s_province').change(function(){
+        if($(this).val()=="省份"){
+            $(this).removeClass("active");
+        }else{
+            $(this).addClass("active");
+        }
+    });
+    $('#s_city').change(function(){
+        if($(this).val()=="城市"){
+            $(this).removeClass("active");
+        }else{
+            $(this).addClass("active");
+        }
+    });
+    $('#s_county').change(function(){
+        if($(this).val()=="区/县"){
+            $(this).removeClass("active");
+        }else{
+            $(this).addClass("active");
+        }
+    });
+</script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=gs0ZjBjw4GO673KUlMpPcnj23V2QpRfw"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<link rel="stylesheet" href="https://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+
+<script type="text/javascript">
+    var sizeWidth=33;
+    var sizeHeight=32;
+
+    $(".tab a").click(function(){
+        var index=$(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".tabs").eq(index).addClass("active").siblings().removeClass("active");
+        if(index==1){
+            $(".stores-top").show();
+        }else{
+            $(".stores-top").hide();
+        }
+    });
+
+
+    $('.map-list').on('click','li',function(){
+        var st=$(".shop-tab").offset().top;
+        var headerHeight=$(".header").height();
+        $(this).addClass('active').siblings().removeClass('active');
+        var j=$(this).data('j');
+        var w=$(this).data('w');
+        var title=$(this).find('h5').text();
+        var add=$(this).find('.shop-add').text();
+        showmap(j,w,title,add);
+        $("html,body").animate({scrollTop:st-headerHeight-20},300);
+    });
+
+    // 百度地图API功能
+    function showmap(j,w,title,add){
+        var map = new BMap.Map('shopMap');
+        var poi = new BMap.Point(j,w);
+        var src='../images_2021/d.png';
+        map.centerAndZoom(poi, 16);
+        map.enableScrollWheelZoom();
+
+        var content = "<div class='zhidl'>地址："+add+"</div>";
+
+        //创建检索信息窗口对象
+        var searchInfoWindow = null;
+        searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+            title  : title, //标题
+            width  : 290,             //宽度
+            height : 42,              //高度
+            panel  : "panel",         //检索结果面板
+            enableAutoPan : true,     //自动平移
+            searchTypes   :[
+                BMAPLIB_TAB_SEARCH,   //周边检索
+                BMAPLIB_TAB_TO_HERE,  //到这里去
+                BMAPLIB_TAB_FROM_HERE //从这里出发
+            ]
+        });
+        var myIcon = new BMap.Icon(src,new BMap.Size(sizeWidth,sizeHeight));
+        var marker = new BMap.Marker(poi,{icon:myIcon}); //创建marker对象
+        marker.addEventListener("click", function(e){
+            searchInfoWindow.open(marker);
+        })
+        searchInfoWindow.open(marker);
+        map.addOverlay(marker); //在地图中添加marker
+    }
+
+    showmap(113.330004,23.127647,"广州服务中心","广东省广州市天河区黄埔大道西33号三新大厦首层");
+</script>
+</body>
+</html>

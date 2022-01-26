@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css_2021/main.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/media.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/swiper.min.css"/>
+    <script src="../js_2021/jquery.js"></script>
+    <script src="../js_2021/swiper.min.js"></script>
+    <script src="../js_2021/fastclick.js"></script>
+    <!--[if IE]>
+    <script src="../js_2021/html5shiv.min.js"></script>
+    <script src="../js_2021/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js_2021/main.js?v=1.9"></script>
+    <script src="../js_2021/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+<!--header s-->
+<div class="header">
+    <a class="logo" href="index.html"><img src="../images_2021/logo.png" alt=""/></a>
+    <div class="header-con">
+        <div class="nav-box">
+            <ul class="nav clear">
+                <li><a class="nav-yi" href="#"><span>首页</span></a></li>
+                <li>
+                    <a class="nav-yi" href="#"><span>走进无限极</span></a>
+                    <div class="nav-er">
+                        <a href="#">无限极全球</a>
+                        <a href="#">无限极中国</a>
+                        <a href="#">公司使命</a>
+                        <a href="#">文化与理念</a>
+                        <a href="#">无限极的故事</a>
+                        <a href="#">董事长寄语</a>
+                    </div>
+                </li>
+                <li><a class="nav-yi" href="#"><span>品牌与产品</span></a></li>
+                <li class="active">
+                    <a class="nav-yi" href="#"><span>事业机会</span></a>
+                    <div class="nav-er">
+                        <a href="#">八大优势</a>
+                        <a href="#">科研实力</a>
+                        <a href="#">海外培训</a>
+                        <a href="#">从业规范</a>
+                        <a href="#">极易学</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>公司动态</span></a>
+                    <div class="nav-er">
+                        <a href="#">公司新闻</a>
+                        <a href="#">媒体报道</a>
+                        <a href="#">分公司风采</a>
+                        <a href="#">打击假冒伪劣</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>社会责任</span></a>
+                    <div class="nav-er">
+                        <a href="#">社会责任体系</a>
+                        <a href="#">公益动态</a>
+                        <a href="#">思利及人公益基金会</a>
+                        <a href="#">公益大事记</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>马上购买</span></a>
+                    <div class="nav-er">
+                        <a href="#">全球购</a>
+                        <a href="javascript:;">微商城
+                            <div class="nav-code">
+                                <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header-area clear">
+            <div class="entry fl">
+                <!--<a href="#"><img src="../images_2021/e1.png" alt=""/><span>售后</span></a>-->
+                <a href="#"><img src="../images_2021/e3.png" alt=""/><span>会员</span></a>
+                <a href="#"><img src="../images_2021/e2.png" alt=""/><span>店铺</span></a>
+            </div>
+            <div class="language fr">
+                <div class="i"></div>
+                <div class="earth"></div>
+                <a class="language-val" href="javascript:;">中</a>
+                <div class="language-box">
+                    <a href="javascript:;">繁</a>
+                    <a href="javascript:;">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-handler" class="menu-handler">
+        <span class="burger burger-1 trans"></span>
+        <span class="burger burger-2 trans-fast"></span>
+        <span class="burger burger-3 trans"></span>
+    </div>
+</div>
+<!--header e-->
+<!--banner s-->
+<div class="banner relative">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/adv-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/adv-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/adv-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-dot text-center bandot"></div>
+</div>
+<script>
+    var bannerleng=$(".banner .swiper-slide").length;
+    var banner=null;
+    if(bannerleng>1){
+        banner = new Swiper('.banner .swiper-container',{
+            loop:true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:800,
+            pagination : '.bandot',
+            paginationClickable :true,
+        })
+    }else{
+        $(".bandot").hide();
+    }
+</script>
+<!--banner e-->
+<!--导航 s-->
+<div class="ny-nav">
+    <div class="ny-navs">
+        <div class="width90">
+            <a class="active" href="#">八大优势</a>
+            <a href="#">科研实力</a>
+            <a href="#">海外培训</a>
+            <a href="#">从业规范</a>
+            <a href="#">极易学</a>
+        </div>
+    </div>
+</div>
+<!--导航 e-->
+<div class="padding-tb40">
+    <div class="width90">
+        <div class="title24 text-center wow slideUp">
+            <h2>八大优势</h2>
+            <span>Eight advantages</span>
+            <div class="i"></div>
+            <p class="size16">我选择无限极的理由</p>
+        </div>
+    </div>
+    <!--公司优势 s-->
+    <div class="gsys relative zindex7">
+        <div class="width90 relative">
+            <div class="gsys-con">
+                <div class="title24 ys-title24 wow slideUp">
+                    <span>company advantage</span>
+                    <h2>公司优势</h2>
+                    <div class="i"></div>
+                </div>
+                <div class="gsys-img wow tobig"><div class="img100"><img src="../images_2021/gsys1.jpg" alt=""/></div></div>
+                <ul class="gsys-list">
+                    <li class="wow slideUp">
+                        <div class="gsys-warp p-num">
+                            <h3 class="size28 margin-b25">健康养生，领跑趋势</h3>
+                            <p><span>1.</span>全球健康趋势正从“重治疗”向“重预防”转变，“健康中国”成为一项国家战略，预计到2030年，中国健康产业的规模将达到16万亿元。新冠肺炎疫情凸显中草药和中华养生文化的优势，众多企业竞相布局这一赛道。</p>
+                            <p><span>2.</span>无限极早在1992年就先知先行，定位中草药健康产品，领跑健康养生赛道。</p>
+                        </div>
+                    </li>
+                    <li class="wow slideUp">
+                        <div class="gsys-warp p-num">
+                            <h3 class="size28 margin-b25">百年基业，全球布局</h3>
+                            <p><span>1.</span>无限极的母公司李锦记，自1888年成立，已经跨越三个世纪、五代人、130多年，以“发扬中华优秀饮食文化”为第一个历史使命，实现了“有人的地方就有李锦记”。</p>
+                            <p><span>2.</span>上世纪90年代，李锦记洞悉中草药健康产业的广阔前景，开启了第二个历史使命“弘扬中华优秀养生文化，创造平衡、富足、和谐的健康人生”，创办了无限极。</p>
+                            <p><span>3.</span>无限极在中国内地有30家分公司、7000多家专卖店，还拥有广州无限极中心、香港无限极广场、上海无限极大厦及新的全球总部广州无限极广场，业务遍及全球十多个国家和地区。</p>
+                        </div>
+                    </li>
+                    <li class="wow slideUp">
+                        <div class="gsys-warp p-num">
+                            <h3 class="size28 margin-b25">思利及人，共享成果</h3>
+                            <p><span>1.</span>无限极传承发扬李锦记的核心价值观“思利及人”，强调“做事先思考如何有利于我们大家”， 把业务队伍作为公司最重要的顾客群体和事业合作伙伴，帮助数十万业务伙伴收获了健康、美丽、财富和友谊，改变了自己和家人的命运。</p>
+                            <p><span>2.</span>无限极在自身不断发展的同时，也带动上下游近2000家全球供应商的壮大，促进几百万人的就业。积极履行社会责任，累计捐款捐物超过2.62 亿元人民币，帮助人们更健康、更快乐，为社会创造价值。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--公司优势 e-->
+</div>
+<!--产品优势 s-->
+<div class="cpys padding-tb80">
+    <div class="width90 relative">
+        <div class="cpys-con">
+            <div class="title24 ys-title24 wow slideUp">
+                <span>Product advantages</span>
+                <h2>产品优势</h2>
+                <div class="i"></div>
+            </div>
+            <div class="cpys-img wow slideUp">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="img100"><img src="../images_2021/cpys1.jpg" alt=""/></div></div>
+                        <div class="swiper-slide"><div class="img100"><img src="../images_2021/cpys1.jpg" alt=""/></div></div>
+                        <div class="swiper-slide"><div class="img100"><img src="../images_2021/cpys1.jpg" alt=""/></div></div>
+                        <div class="swiper-slide"><div class="img100"><img src="../images_2021/cpys1.jpg" alt=""/></div></div>
+                    </div>
+                </div>
+                <div class="text-right swiper-dot cpysDot"></div>
+            </div>
+            <ul class="cpys-list bgf5">
+                <li class="wow slideUp">
+                    <div class="cpys-top relative">
+                        <h3 class="size28">多元化产品满足需求</h3>
+                        <div class="cpys-icon"></div>
+                    </div>
+                    <div class="cpys-des p-num">
+                        <p><span>1.</span>无限极定位于“高品质的中草药健康产品”，拥有健康食品、护肤品、个人护理品、家居用品和养生用品五大系列、七大品牌，共200余款产品；还推出了“INFINITUS全球购”，满足人们对健康、美丽、年轻、活力、品质生活等多元化的需求。</p>
+                        <p><span>2.</span>无限极打造独特的健康理念“养生固本 健康人生”，帮助现代人掌握科学、简单、实用的养生方法，创造平衡、富足、和谐的健康人生。</p>
+                    </div>
+                </li>
+                <li class="wow slideUp">
+                    <div class="cpys-top relative">
+                        <h3 class="size28">全球化合作自主科研</h3>
+                        <div class="cpys-icon"></div>
+                    </div>
+                    <div class="cpys-des p-num">
+                        <p><span>1.</span>无限极定位于“高品质的中草药健康产品”，拥有健康食品、护肤品、个人护理品、家居用品和养生用品五大系列、七大品牌，共200余款产品；还推出了“INFINITUS全球购”，满足人们对健康、美丽、年轻、活力、品质生活等多元化的需求。</p>
+                        <p><span>2.</span>无限极打造独特的健康理念“养生固本 健康人生”，帮助现代人掌握科学、简单、实用的养生方法，创造平衡、富足、和谐的健康人生。</p>
+                    </div>
+                </li>
+                <li class="wow slideUp">
+                    <div class="cpys-top relative">
+                        <h3 class="size28">全产业链保障高品质</h3>
+                        <div class="cpys-icon"></div>
+                    </div>
+                    <div class="cpys-des p-num">
+                        <p><span>1.</span>无限极定位于“高品质的中草药健康产品”，拥有健康食品、护肤品、个人护理品、家居用品和养生用品五大系列、七大品牌，共200余款产品；还推出了“INFINITUS全球购”，满足人们对健康、美丽、年轻、活力、品质生活等多元化的需求。</p>
+                        <p><span>2.</span>无限极打造独特的健康理念“养生固本 健康人生”，帮助现代人掌握科学、简单、实用的养生方法，创造平衡、富足、和谐的健康人生。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--产品优势 e-->
+<!--事业优势 s-->
+<div class="syys padding-tb80">
+    <div class="width90">
+        <div class="title24 ys-title24 wow slideUp">
+            <span>Career advantage</span>
+            <h2>事业优势</h2>
+            <div class="i"></div>
+        </div>
+        <ul class="syys-list">
+            <li>
+                <div class="img100 wow slideUp" style="background: url(../images_2021/shiye1.jpg) no-repeat center;background-size: cover;"></div>
+                <div class="shiye-con wow slideUp">
+                    <h3 class="size28 margin-b25">全渠道营销</h3>
+                    <div class="p-num">
+                        <p><span>1.</span>线上线下融合发展，是现代商业的大趋势。一直以来，线下渠道营销是无限极的长项和优势。无限极在全国拥有30家服务中心、7000多家专卖店，面对面为顾客提供有温度的服务和体验。</p>
+                        <p><span>2.</span>2019年起，无限极和腾讯达成战略合作，投入巨资进行企业的数字化转型升级，创新“直销×社交电商”商业模式，持续推出线上产品、工具和玩法，赋能业务队伍，打造线上线下全渠道营销，让创业更轻松，拓展更高效，体验更美好。</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="img100 wow slideUp" style="background: url(../images_2021/shiye2.jpg) no-repeat center;background-size: cover;"></div>
+                <div class="shiye-con wow slideUp">
+                    <h3 class="size28 margin-b25">低风险创业</h3>
+                    <div class="p-num">
+                        <p><span>1.</span>在无限极创业，不需要投入太多的钱，不需要压货，时间自由，经营方式灵活，线上、线下、全职或是兼职，自用省钱、分享赚钱，多劳多得，获得一份长期持续的收入，随心选择，轻松创业。</p>
+
+                        <p><span>2.</span>公司提供完善的学习培训支持和激励表彰制度，创业有人教、有人帮、有人带；每一个人都可以拥有自己的舞台，走出国门，学习成长；还可以把事业交棒给子女，让自己的事业、财富和精神得以传承。</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--事业优势 e-->
+
+<!--footer s-->
+<div class="footer">
+    <div class="width90">
+        <div class="footer-top relative">
+            <img class="footer-logo" src="../images_2021/logo-fff.png" alt=""/>
+            <div class="footer-nav clear">
+                <dl>
+                    <dt>走进无限极<i></i></dt>
+                    <dd><a href="#">无限极全球</a></dd>
+                    <dd><a href="#">无限极中国</a></dd>
+                    <dd><a href="#">公司使命</a></dd>
+                    <dd><a href="#">董事长寄语</a></dd>
+                </dl>
+                <dl>
+                    <dt>品牌与产品<i></i></dt>
+                    <dd><a href="#">无限极</a></dd>
+                    <dd><a href="#">养固健</a></dd>
+                    <dd><a href="#">萃雅</a></dd>
+                    <dd><a href="#">心维雅</a></dd>
+                    <dd><a href="#">植雅</a></dd>
+                    <dd><a href="#">享优乐</a></dd>
+                    <dd><a href="#">帮得佳</a></dd>
+                </dl>
+                <dl>
+                    <dt>事业机会<i></i></dt>
+                    <dd><a href="#">八大优势</a></dd>
+                    <dd><a href="#">科研实力</a></dd>
+                    <dd><a href="#">海外培训</a></dd>
+                    <dd><a href="#">从业规范</a></dd>
+                    <dd><a href="#">极易学</a></dd>
+                </dl>
+                <dl>
+                    <dt>公司动态<i></i></dt>
+                    <dd><a href="#">公司新闻</a></dd>
+                    <dd><a href="#">媒体报道</a></dd>
+                    <dd><a href="#">分公司风采</a></dd>
+                    <dd><a href="#">打击假冒伪劣</a></dd>
+                </dl>
+                <dl>
+                    <dt>社会责任<i></i></dt>
+                    <dd><a href="#">社会责任体系</a></dd>
+                    <dd><a href="#">公益动态</a></dd>
+                    <dd><a href="#">思利及人公益基金会</a></dd>
+                    <dd><a href="#">公益大事记</a></dd>
+                </dl>
+                <dl>
+                    <dt>马上购买<i></i></dt>
+                    <dd><a href="#">全球购</a></dd>
+                    <dd>
+                        <a href="javascript:;">微商城
+                            <div class="nav-code">
+                                <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                            </div>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务<i></i></dt>
+                    <dt>各地店铺<i></i></dt>
+                    <dt>联系我们 <i></i></dt>
+                </dl>
+                <dl>
+                    <dt>会员入口<i></i></dt>
+                    <dt>企业招聘<i></i></dt>
+                </dl>
+            </div>
+            <div class="kslj">
+                <h3>快速链接</h3>
+                <div class="kslj1">
+                    <a class="a1 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极公众号</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极公众号</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a3" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-wb.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极微博</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a6" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-dy.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极抖音号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a9" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-sph.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极视频号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a10 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极小程序</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极小程序</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="ks-app" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极APP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a class="appxia" href="#">商城app下载</a>
+            </div>
+        </div>
+        <div class="footer-bot clear">
+            <div class="fr footer-bot-b">
+                <div class="footer-link">
+                    <a href="#">李锦记健康产品集团</a><span>|</span>
+                    <a href="#">国家市场监督管理总局</a><span>|</span>
+                    <a href="#">产品批次报告查询</a><span>|</span>
+                    <a href="#">国际联网备案登记证书</a>
+                    <br/>
+                    <a href="#">直销信息披露</a><span>|</span>
+                    <a href="#">保健食品注册信息查询</a><span>|</span>
+                    <a href="#">化妆品注册与备案信息查询</a>
+                </div>
+                <div class="bq">
+                    <span>版权所有©2017 无限极（中国）</span><a href="#">[粤ICP备05041458号]</a><a href="#">粤公网安备44010602005995号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="fixed-right">
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-gzh.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极公众号</p>
+                </div>
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极公众号</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-wb.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-wb.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极微博</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-dy.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-dy.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极抖音号</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-sph.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-sph.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极视频号</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-xcx.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极小程序</p>
+                </div>
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极小程序</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-app.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极APP</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+</ul>
+<!--footer e-->
+<script>
+    $(".cpys-list li").eq(0).addClass("active").find(".cpys-des").slideDown();
+    $(".cpys-top").click(function(){
+        $(this).siblings(".cpys-des").slideDown().parent().addClass("active").siblings().removeClass("active").find(".cpys-des").slideUp();
+    });
+    var len=$(".cpys-img .swiper-slide").length;
+    if(len>1){
+        var cpys = new Swiper('.cpys-img .swiper-container',{
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            loop:true,
+            speed:600,
+            pagination : '.cpysDot',
+            paginationClickable :true,
+        })
+    }else{
+        $(".cpysDot").hide();
+    }
+
+</script>
+</body>
+</html>

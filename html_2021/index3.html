@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css_2021/main.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/media.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/swiper.min.css"/>
+    <script src="../js_2021/jquery.js"></script>
+    <script src="../js_2021/swiper.min.js"></script>
+    <script src="../js_2021/fastclick.js"></script>
+    <!--[if IE]>
+    <script src="../js_2021/html5shiv.min.js"></script>
+    <script src="../js_2021/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js_2021/main.js?v=1.9"></script>
+    <script src="../js_2021/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style type="text/css">
+
+        /*body{padding-top: 0;}*/
+        /*body.is-scroll{padding-top: 0;}*/
+        /*.index-header{height: 90px;transition: all .4s;}*/
+        /*.footer{background: url("../images_2021/bg004.jpg?v=2") no-repeat center;background-size: cover;}*/
+        .bianpao3{position: absolute;width: 280px;left: 50%;margin-left: -140px;z-index: 10;margin-top: -70px;}
+        .denglong3{position: absolute;left: 0;top:-80px;}
+        .sanjiaoxing3{position: absolute;right: 4%;top:0;}
+        .padding-t125{padding-top: 125px;}
+        .yun3{position: absolute;;left: 10%;top: -165px;width: 380px;}
+        .shzr .swiper-slide{background: none;}
+        .shzr .img100{background: #fff;}
+        /*.festival-top{position: absolute;left: 0;bottom:0; height: 140px;width: 100%;background: url(../images_2021/f140.jpg?v=2) no-repeat center;background-size: cover;opacity: 0;z-index: 4;transition: all .6s linear .4s;}*/
+        /*.festival{transition: all .8s linear;height: 800px;width: 100%;background: url(../images_2021/festival.jpg) no-repeat center;background-size: cover;z-index: 9;position: relative;}*/
+        /*body.fixed .header{position: fixed;}*/
+
+
+
+        @media (min-width: 1050px){
+            .header{background: url("../images_2021/header.jpg") no-repeat center;background-size: cover;box-shadow: none !important;}
+            .header .nav-yi{color:#fff !important;}
+            .nav li.active .nav-yi{color:#fff;}
+            .nav-yi:after{background:#fff;}
+            .language-val,.entry span{color:#fff;}
+            .earth{background: url(../images_2021/earth-fff.png) no-repeat center;background-size: cover;}
+            .language .i{background: url(../images_2021/6-fff.png) no-repeat center;background-size: cover;}
+        }
+        @media (max-width: 1050px){
+            .header{position: relative;}
+            body{padding-top: 0;}
+            body.is-scroll{padding-top: 0;}
+            .index-header{height: 60px;transition: all .4s;}
+            .festival-top{position: absolute;left: 0;bottom:0; height: 140px;width: 100%;background: url(../images_2021/f140.jpg?v=2) no-repeat center;background-size: cover;opacity: 0;z-index: 4;transition: all .6s linear .4s;}
+            .festival{transition: all .8s linear;height: 800px;width: 100%;background: url(../images_2021/festival.jpg) no-repeat center;background-size: cover;z-index: 9;position: relative;}
+            body.fixed .header{position: fixed;}
+
+
+            .festival-top{height: 40px;}
+            .header-con{top:40px;}
+            body.fixed .header-con{top:60px;}
+            .festival{height: 100vh;margin-top: -60px;background: url(../images_2021/cun.jpg?v=3) no-repeat center;background-size: cover;}
+        }
+        @media (max-width: 1050px){
+            .padding-t125{padding-top: 35px;}
+        }
+
+    </style>
+    <script>
+        $(function(){
+            var ww=$(window).width();
+//            var h=$(".festival-top").height();
+            var h=2;
+            $("html,body").animate({scrollTop:0},500);
+            setTimeout(function(){
+                if(ww>1050){
+//                    $(".festival").delay(500).css({
+//                        marginTop:"-660px"
+//                    });
+                }else{
+                    $(".festival").delay(800).css({
+                        marginTop:"calc(-100vh - 60px)"
+                    });
+                }
+//                $(".festival-top").delay(500).css({
+//                    opacity:20,
+//                    zIndex: 20
+//                });
+                $(window).scroll(function(){
+                    if($(window).scrollTop()>h){
+                        $("body").addClass("fixed");
+                    }else{
+                        $("body").removeClass("fixed");
+                    }
+                })
+            },3000)
+        })
+    </script>
+</head>
+<body>
+
+<div class="relative">
+    <div class="festival"></div>
+    <div class="festival-top"></div>
+</div>
+<!--header s-->
+<div class="index-header">
+    <div class="header">
+        <a class="logo pc-show" href="index.html"><img src="../images_2021/logo-fff.png" alt=""/></a>
+        <a class="logo wap-show" href="index.html"><img src="../images_2021/logo.png" alt=""/></a>
+        <div class="header-con">
+            <div class="nav-box">
+                <ul class="nav clear">
+                    <li highalias="sy" class="active"><a class="nav-yi" href="https://nwww-dev.infinitus.com.cn/"><span class="langel" chattr="首页" ftattr="首頁" enattr="Home">首页</span></a></li>
+                    <li highalias="wxjgw_zjwxj">
+
+                        <a class="nav-yi" href="/wxjgw/zjwxj/wxjqq/"><span class="langel" chattr="走进无限极" ftattr="走進無限極" enattr="About Infinitus">走进无限极</span></a>
+
+                        <div class="nav-er">
+
+
+                            <a href="/wxjgw/zjwxj/wxjqq/" class="langel" chattr="无限极全球" ftattr="無限極全球" enattr="Infinitus Global">无限极全球</a>
+                            <a href="/wxjgw/zjwxj/wxjzg/" class="langel" chattr="无限极中国" ftattr="無限極中國" enattr="Infinitus China">无限极中国</a>
+                            <a href="/wxjgw/zjwxj/gssm/" class="langel" chattr="公司使命" ftattr="公司使命" enattr="Mission">公司使命</a>
+                            <a href="/wxjgw/zjwxj/whyln/" class="langel" chattr="文化与理念" ftattr="文化與理念" enattr="CULTURE&nbsp;&amp; PHILOSOPHY">文化与理念</a>
+                            <a href="/wxjgw/zjwxj/wxjdgs/" class="langel" chattr="无限极的故事" ftattr="無限極的故事" enattr="INFINITUS'&nbsp;STORIES">无限极的故事</a>
+                            <a href="/zxcj2.0/zjwxj/dscjy/" class="langel" chattr="董事长寄语" ftattr="董事長寄語" enattr="Chairman's Message">董事长寄语</a>
+
+                        </div>
+                    </li>
+
+                    <li highalias="wxjgw_ppycp"><a class="nav-yi" href="/wxjgw/ppycp/"><span class="langel" chattr="品牌与产品" ftattr="品牌與產品" enattr="Brands &amp; Products">品牌与产品</span></a></li>
+
+                    <li highalias="wxjgw_syjh">
+
+                        <a class="nav-yi" href="/wxjgw/syjh/bdys/"><span class="langel" chattr="事业机会" ftattr="事業機會" enattr="Business Opportunity">事业机会</span></a>
+
+                        <div class="nav-er">
+
+
+                            <a href="/wxjgw/syjh/bdys/" class="langel" chattr="八大优势" ftattr="八大優勢" enattr="Eight Advantages">八大优势</a>
+                            <a href="/zxcj2.0/gsyw/sywx/hwpx/zxzx/" class="langel" chattr="海外培训" ftattr="海外培訓" enattr="Overseas Training">海外培训</a>
+                            <a href="/zxcj2.0/gsyw/sywx/gfzq/ywsz/" class="langel" chattr="从业规范" ftattr="從業規範" enattr="Regulatory Compliance">从业规范</a>
+                            <a href="/wxjgw/syjh/jyx/" class="langel" chattr="极易学" ftattr="極易學" enattr="e-Learning">极易学</a>
+
+                        </div>
+                    </li>
+                    <li highalias="wxjgw_kjcwl">
+
+                        <a class="nav-yi" href="/wxjgw/syjh/kysl/"><span class="langel" chattr="科技创未来" ftattr="科技創未來" enattr="Science &amp; technology">科技创未来</span></a>
+
+                        <div class="nav-er">
+
+
+                            <a href="/wxjgw/syjh/kysl/" class="langel" chattr="科研实力" ftattr="科研實力" enattr="R&amp;D Strength">科研实力</a>
+                            <a href="/wxjgw/kjcwl/jkmy/" class="langel" chattr="健康免疫" ftattr="健康免疫" enattr="Healthy immunity">健康免疫</a>
+                            <a href="/wxjgw/kjcwl/hfky/" class="langel" chattr="护肤科研" ftattr="護膚科研" enattr="Skin care research">护肤科研</a>
+                            <a href="/wxjgw/kjcwl/txgl/" class="langel" chattr="体型管理" ftattr="體型管理" enattr="Body management">体型管理</a>
+
+                        </div>
+                    </li>
+                    <li highalias="wxjgw_gsdt">
+
+                        <a class="nav-yi" href="/zxcj2.0/gsyw/gsdt/gsxw/"><span class="langel" chattr="公司动态" ftattr="公司動態" enattr="Newsroom">公司动态</span></a>
+
+                        <div class="nav-er">
+
+
+                            <a href="/zxcj2.0/gsyw/gsdt/gsxw/" class="langel" chattr="公司新闻" ftattr="公司新聞" enattr="Corporate News">公司新闻</a>
+                            <a href="/zxcj2.0/gsyw/gsdt/mtbd/" class="langel" chattr="媒体报道" ftattr="媒體報導" enattr="Media Report">媒体报道</a>
+                            <a href="/zxcj2.0/gsyw/gsdt/dffc/fgs/" class="langel" chattr="分公司风采" ftattr="分公司風采" enattr="More about Our Branches">分公司风采</a>
+                            <a href="/zxcj2.0/gsyw/gsdt/djjmwl/" class="langel" chattr="打击假冒伪劣" ftattr="打擊假冒偽劣" enattr="Anti-Counterfeit">打击假冒伪劣</a>
+
+                        </div>
+                    </li>
+                    <li highalias="wxjgw_shzr">
+
+                        <a class="nav-yi" href="/wxjgw/shzr/shzrtx/"><span class="langel" chattr="社会责任" ftattr="社會責任" enattr="Social Responsibility">社会责任</span></a>
+
+                        <div class="nav-er">
+
+
+                            <a href="/wxjgw/shzr/shzrtx/" class="langel" chattr="社会责任体系" ftattr="社會責任體系" enattr="Social Responsibility System">社会责任体系</a>
+                            <a href="/wxjgw/shzr/csrbg/" class="langel" chattr="企业社会责任报告" ftattr="企業社會責任報告" enattr="CSR Report">企业社会责任报告</a>
+                            <a href="/zxcj2.0/shzr/gydt/" class="langel" chattr="公益动态" ftattr="公益動態" enattr="CSR News">公益动态</a>
+                            <a href="/wxjgw/shzr/sljrgyjjh/" class="langel" chattr="思利及人公益基金会" ftattr="思利及人公益基金會" enattr="Si Li Ji Ren Foundation">思利及人公益基金会</a>
+
+                        </div>
+                    </li>
+                    <li highalias="wxjgw_msgm">
+
+                        <a class="nav-yi" target="_blank" href="/wxjgw/msgm/wsc/"><span class="langel" chattr="马上购买" ftattr="馬上購買" enattr="Buy Now">马上购买</span></a>
+
+                        <div class="nav-er">
+
+
+                            <a href="/wxjgw/msgm/wsc/" target="_blank" class="langel" chattr="无限极微商城" ftattr="無限極微商城" enattr="Infinitus Fun Mall">无限极微商城</a>
+                            <a href="https://www-dev.infinituscloud.com.cn/front/cbec/public/showCbecHome" target="_blank" class="langel" chattr="全球购" ftattr="全球購" enattr="Global Buy">全球购</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-area clear">
+                <div class="entry fl">
+                    <a target="_blank" href="https://edealer-dev.infinitus.com.cn/front"><img src="../images_2021/e3-fff.png" alt=""><span class="langel" chattr="会员" ftattr="會員" enattr="Members">会员</span></a>
+                    <a target="_blank" href="https://estore-dev.infinitus.com.cn/front"><img src="../images_2021/e2-fff.png" alt=""><span class="langel" chattr="店铺" ftattr="店鋪" enattr="Shop">店铺</span></a>
+                </div>
+                <div class="language fr">
+                    <div class="i"></div>
+                    <div class="earth"></div>
+                    <a id="CurrentLangChoise" class="language-val" href="javascript:;">中</a>
+                    <div class="language-box">
+                        <a id="ChoiseCH" style="display:none;" href="javascript:changLang('CH', true);">中</a>
+                        <a id="ChoiseFT" href="javascript:changLang('FT', true);">繁</a>
+                        <a id="ChoiseEN" href="javascript:changLang('EN', true);">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-handler" class="menu-handler">
+            <span class="burger burger-1 trans"></span>
+            <span class="burger burger-2 trans-fast"></span>
+            <span class="burger burger-3 trans"></span>
+        </div>
+    </div>
+</div>
+<!--header e-->
+
+<!--pc s-->
+<div class="computer">
+    <!--banner s-->
+    <div class="banner relative">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- 24000 视频秒数-->
+                <!--<div class="swiper-slide" data-swiper-autoplay="11000">-->
+                    <!--<video muted="" src="../mp4_2021/3.mp4" autoplay="" loop=""></video>-->
+                <!--</div>-->
+                <div class="swiper-slide">
+                    <div class="img100"><a name="无限极携手微博健康打造硬核免疫力指南" target="_blank" href="/c/2021-12-03/545753.shtml"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87829.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img100"><a name="按摩梳" target="_blank" href=""><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87831.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img100"><a name="面膜" target="_blank" href=""><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87832.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></a></div>
+                </div>
+                <!--<div class="swiper-slide">-->
+                    <!--<div class="img100"><a name="【年会】未来由我创，精彩无限极" target="_blank" href="/c/2022-01-08/273573.shtml"><img src="https://cmsqn.infinitus.com.cn/122/upload/resources/image/16700582.jpg" alt=""/></a></div>-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<div class="img100"><a name="无限极携手新浪体育助力中国新生代街舞力量" target="_blank" href="/c/2021-12-06/270968.shtml"><img src="https://cmsqn.infinitus.com.cn/122/upload/resources/image/16700426.png" alt=""/></a></div>-->
+                <!--</div>-->
+
+                <!--<div class="swiper-slide">-->
+                    <!--<div class="img100"><a name="走进大别山，探寻调节免疫力的好手“茯苓”" target="_blank" href="https://qr14.cn/Couw37"><img src="https://cmsqn.infinitus.com.cn/122/upload/resources/image/16700427.png" alt=""/></a></div>-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<div class="img100"><a name="新坐标，致无限&#32;广州无限极广场今日落成！" target="_blank" href="/c/2021-11-09/268855.shtml"><img src="https://cmsqn.infinitus.com.cn/122/upload/resources/image/16700551.png" alt=""/></a></div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="bannerDot"></div>
+        <div class="bannerNext"><span>NEXT</span><img src="../images_2021/r.png" alt=""></div>
+    </div>
+    <!--banner e-->
+    <div style="background: url(../images_2021/hu3.jpg?v=2) no-repeat top right;background-size: cover;">
+        <!--公司品牌 s-->
+        <div class="padding-t80 padding-tb30">
+            <div class="width90">
+                <div class="title30 title30-yellowslideUp">
+                    <h2>Company brand <i class="tobig"></i></h2>
+                    <span>公司品牌</span>
+                </div>
+                <ul class="clear menu">
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav01.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav03.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav04.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav06.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav05.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav07.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a href="#"><img src="../images_2021/nav02.jpg" alt=""/></a></li>
+                    <li class="slideUp"><a name="轻盈跃" target="_blank" href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P11/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87833.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--公司品牌 e-->
+        <!--公司动态 s-->
+        <div class="padding-tb70">
+            <div class="width90">
+                <div class="title30 title30-yellow wow slideUp">
+                    <h2>company news <i class="wow tobig"></i></h2>
+                    <span>公司动态</span>
+                </div>
+            </div>
+            <div class="relative wow slideUp">
+                <div class="width90">
+
+                    <div class="newplay">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+
+                                <div class="swiper-slide">
+                                    <a href="/c/2021-12-13/545968.shtml" target="_blank">
+
+                                        <div class="newType">公司新闻</div>
+
+                                        <div class="new-top">
+                                            <div class="new-warp">
+                                                <p>29载创业路，感恩有你</p>
+                                            </div>
+                                        </div>
+                                        <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87889.jpg" alt=""/></div>
+
+
+                                        <div class="news-hide position-full" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87889.jpg) no-repeat center;background-size: cover;"></div>
+
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/c/2021-12-12/545971.shtml" target="_blank">
+
+                                        <div class="newType">公司新闻</div>
+
+                                        <div class="new-top">
+                                            <div class="new-warp">
+                                                <p>无限极携手新浪体育助力中国新生代街舞力量</p>
+                                            </div>
+                                        </div>
+                                        <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87890.jpg" alt=""/></div>
+
+
+                                        <div class="news-hide position-full" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87890.jpg) no-repeat center;background-size: cover;"></div>
+
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/c/2021-12-11/545750.shtml" target="_blank">
+
+                                        <div class="newType">公司新闻</div>
+
+                                        <div class="new-top">
+                                            <div class="new-warp">
+                                                <p>无限极全新女性护理品牌“轻盈跃”及首款新品正式发布！</p>
+                                            </div>
+                                        </div>
+                                        <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87827.png?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+
+
+                                        <div class="news-hide position-full" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87827.png?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast) no-repeat center;background-size: cover;"></div>
+
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/c/2021-12-03/545753.shtml" target="_blank">
+
+                                        <div class="newType">公司新闻</div>
+
+                                        <div class="new-top">
+                                            <div class="new-warp">
+                                                <p>无限极携手微博健康打造硬核免疫力指南</p>
+                                            </div>
+                                        </div>
+                                        <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87828.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+
+
+                                        <div class="news-hide position-full" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87828.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast) no-repeat center;background-size: cover;"></div>
+
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/c/2021-12-03/545747.shtml" target="_blank">
+
+                                        <div class="newType">公司新闻</div>
+
+                                        <div class="new-top">
+                                            <div class="new-warp">
+                                                <p>共襄未来发展，无限极2021年度业务总监级会议隆重举行</p>
+                                            </div>
+                                        </div>
+                                        <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87826.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+
+
+                                        <div class="news-hide position-full" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87826.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast) no-repeat center;background-size: cover;"></div>
+
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="/c/2021-12-01/535295.shtml" target="_blank">
+
+                                        <div class="newType">公司新闻</div>
+
+                                        <div class="new-top">
+                                            <div class="new-warp">
+                                                <p>行业专家和媒体溯源无限极道地三七</p>
+                                            </div>
+                                        </div>
+                                        <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/86640.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+
+
+                                        <div class="news-hide position-full" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/86640.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast) no-repeat center;background-size: cover;"></div>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newBtn">
+                    <div class="newBtn1"><i></i></div>
+                    <div class="newBtn2"><i></i></div>
+                </div>
+            </div>
+        </div>
+        <!--公司动态 e-->
+    </div>
+
+    <div style="background: url('') no-repeat bottom left;background-size: cover;">
+        <div class="bianpao3 img100"><img src="../images_2021/bianpao3.png" alt=""/></div>
+        <!--无限极健康食品 s-->
+        <div class="padding-tb80 relative zindex8">
+            <div class="spbg" style="background: #fdf7f0;background-size: cover;"></div>
+            <div class="width90">
+                <div class="title30 wow slideUp">
+                    <h2>Infinitus healthy food <i class="wow tobig"></i></h2>
+                    <span>无限极健康食品</span>
+                </div>
+                <div class="shipin relative wow slideUp">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a name="型美CP" href="https://eproduct.infinitus.com.cn/front/public/product/query/showProductDetail/91000329" target="_blank"><div class="img100" style="background: url(https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87920.jpg) no-repeat center;background-size: cover;"></div></a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-dot text-center shipinDot"></div>
+                    <div class="spBtn">
+                        <div class="spBtn1"></div>
+                        <div class="spBtn2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--无限极健康食品 e-->
+        <!--事业机会 s-->
+        <div class="relative zindex7">
+            <div class="denglong3 img100"><img src="../images_2021/denglong3.jpg?v=2" alt=""/></div>
+            <div class="business-shadow"></div>
+            <div class="width90 relative">
+                <div class="title30 title30-busi title30-yellow wow slideUp">
+                    <h2>Career opportunity <i class="wow tobig"></i></h2>
+                    <span>事业机会</span>
+                </div>
+                <div class="business-top wow slideUp">
+                    <div class="business-type">
+                        <div class="middle-box">
+                            <div class="middle-inner">
+                                <ul>
+                                    <li class="active">
+                                        <h3>八大优势</h3>
+                                        <span>EIGHT ADVANTAGES</span>
+                                        <p>我选择无限极的理由</p>
+                                    </li>
+                                    <li class="">
+                                        <h3>科研实力</h3>
+                                        <span>Scientific research strength</span>
+                                        <p>多方科研平台，全产业链支撑开发精品</p>
+                                    </li>
+                                    <li class="">
+                                        <h3>从业规范</h3>
+                                        <span>Practice norms</span>
+                                        <p>规范经营、和谐发展</p>
+                                    </li>
+                                    <li class="">
+                                        <h3>极易学</h3>
+                                        <span>Easy to learn</span>
+                                        <p>海量学习资源尽在极易学</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="business wow slideUp">
+                    <div class="business-tab">
+                        <div class="business-page active">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img100" style="background: url(https://nwww-dev.infinitus.com.cn/images_2021/sy110.jpg) no-repeat center;background-size: cover;">
+                                            <img src="../images_2021/sy110.jpg" alt=""/>
+                                        </div>
+                                        <div class="business-des">
+                                            <div class="business-warp">
+                                                <div class="business-b">
+                                                    <p>传承百年企业的基因，历经近30年的商业实践，无限极拥有了众多独特的竞争优势，为创业者提供卓越的事业平台。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-page">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img100" style="background: url(https://nwww-dev.infinitus.com.cn/images_2021/sy110.jpg) no-repeat center;background-size: cover;">
+                                            <img src="../images_2021/sy110.jpg" alt=""/>
+                                        </div>
+                                        <div class="business-des">
+                                            <div class="business-warp">
+                                                <div class="business-b">
+                                                    <p>传承百年企业的基因，历经近30年的商业实践，无限极拥有了众多独特的竞争优势，为创业者提供卓越的事业平台。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img100" style="background: url(https://nwww-dev.infinitus.com.cn/images_2021/sy110.jpg) no-repeat center;background-size: cover;">
+                                            <img src="../images_2021/sy110.jpg" alt=""/>
+                                        </div>
+                                        <div class="business-des">
+                                            <div class="business-warp">
+                                                <div class="business-b">
+                                                    <p>传承百年企业的基因，历经近30年的商业实践，无限极拥有了众多独特的竞争优势，为创业者提供卓越的事业平台。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-page">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img100" style="background: url(https://nwww-dev.infinitus.com.cn/images_2021/sy110.jpg) no-repeat center;background-size: cover;">
+                                            <img src="../images_2021/sy110.jpg" alt=""/>
+                                        </div>
+                                        <div class="business-des">
+                                            <div class="business-warp">
+                                                <div class="business-b">
+                                                    <p>传承百年企业的基因，历经近30年的商业实践，无限极拥有了众多独特的竞争优势，为创业者提供卓越的事业平台。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-page">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img100" style="background: url(https://nwww-dev.infinitus.com.cn/images_2021/sy110.jpg) no-repeat center;background-size: cover;">
+                                            <img src="../images_2021/sy110.jpg" alt=""/>
+                                        </div>
+                                        <div class="business-des">
+                                            <div class="business-warp">
+                                                <div class="business-b">
+                                                    <p>传承百年企业的基因，历经近30年的商业实践，无限极拥有了众多独特的竞争优势，为创业者提供卓越的事业平台。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="businessBtn">
+                        <div class="businessBtn1"></div>
+                        <div class="businessBtn2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--事业机会 e-->
+    </div>
+    <!--社会责任s-->
+    <div class="padding-t125 relative" style="">
+        <div class="sanjiaoxing3 img100"><img src="../images_2021/sanjiaoxing3.jpg" alt=""/></div>
+        <div class="relative zindex7 padding-tb100">
+            <div class="rhzr-bg" style="background: url(../images_2021/shzr-bg.jpg) no-repeat center;background-size: cover;"></div>
+            <div class="width90">
+                <div class="shzr-top">
+                    <div class="title30 wow slideUp">
+                        <h2>Social responsibility <i class="wow tobig"></i></h2>
+                        <span>社会责任</span>
+                    </div>
+                    <div class="shzr-des wow slideUp">
+                        <p>通过提升员工与业务伙伴的CSR意识，在健康、品质、员工、伙伴、环境和社会方面履行责任，实现平衡、富足、和谐的健康人生。</p>
+                    </div>
+                </div>
+                <div class="shzr wow slideUp">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+
+                            <div class="swiper-slide imgscale">
+                                <a href="/c/2020-11-13/531190.shtml" target="_blank">
+                                    <div class="img100"><div class="img"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/56591.jpg" alt=""/></div></div>
+                                    <div class="shzr-bot">
+                                        <h3>藏族女孩卓玛：舞蹈梦，让未来值得期待</h3>
+                                        <span>2020-11-13</span>
+                                        <p>作为2018级青海畜牧兽医专业思利及人助学圆梦班的文艺委员，卓玛在学校组建了舞蹈队，还在今年学校80周年校庆上进行了演出。在这里，她寻回了自己的舞蹈梦。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide imgscale">
+                                <a href="/c/2017-01-17/15229.shtml" target="_blank">
+                                    <div class="img100"><div class="img"><img src="http://cmsqn-staging.infinitus.com.cn/2017/0116/1484556160758.jpg" alt=""/></div></div>
+                                    <div class="shzr-bot">
+                                        <h3>跨越上千公里，无限极为孩子们带去快乐！</h3>
+                                        <span>2017-01-17</span>
+                                        <p>2015年，无限极与中国青少年发展基金会携手启动“快乐足球”项目，通过足球普及、培训、比赛和营养提升来帮助乡村孩子健康快乐成长，并借此激发他们的成长潜能。守护孩子的快乐和梦想，并给他们创造实现梦想的平台，这样有意义的事，无限极快乐足球会一直做下去！</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide imgscale">
+                                <a href="/c/2017-01-13/15213.shtml" target="_blank">
+                                    <div class="img100"><div class="img"><img src="http://cmsqn-staging.infinitus.com.cn/2017/0112/1484190981657.jpg" alt=""/></div></div>
+                                    <div class="shzr-bot">
+                                        <h3>深耕十年，它让更多的人读懂无限极！</h3>
+                                        <span>2017-01-13</span>
+                                        <p>1月9日，《2016无限极企业社会责任报告》发布，这是公司自2008年起，连续发布的第10份《企业社会责任报告》。接下来，小i将带你速读《2016无限极企业社会责任报告》，一同见证公司在健康、品质、伙伴、员工、环境和社区责任等领域与利益相关方共享价值的行动和成效。</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--社会责任e-->
+    <!--服务中心 s-->
+    <div class="bgf9 fwzx">
+        <div class="width90 relative clear">
+            <div class="yun3 img100"><img src="../images_2021/yun3.png" alt=""/></div>
+            <div class="zmdss fl">
+                <div class="title30 wow slideUp">
+                    <h2>Service Center <i class="wow tobig"></i></h2>
+                    <span>服务中心</span>
+                </div>
+                <div class="zmdss-bot wow slideUp">
+                    <!--<div class="zmdss-name"><img src="../images_2021/shop.png" alt=""/><span>专卖店搜索</span><i>（中国内地）</i></div>-->
+                    <!--<div class="zmdss-list">-->
+                        <!--<div class="zmdss-page">-->
+                            <!--<select class="bx-border" id="s_province" name="s_province">-->
+                                <!--<option value="省份">省份</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<div class="zmdss-page">-->
+                            <!--<select class="bx-border" id="s_city" name="s_city">-->
+                                <!--<option value="城市">城市</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<div class="zmdss-page">-->
+                            <!--<select class="bx-border" id="s_county" name="s_county">-->
+                                <!--<option value="地区">地区</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <a class="qd wow slideUp" href="7.2-shop.html">查找店铺</a>
+                </div>
+            </div>
+            <div class="index-map">
+                <div class="img100"><img src="../images_2021/map.jpg" alt=""/></div>
+            </div>
+        </div>
+    </div>
+    <!--服务中心 e-->
+</div>
+<!--pc e-->
+<!--移动端 s-->
+<div class="wap">
+    <!--banner s-->
+    <div class="wap-banner relative">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- 24000 视频秒数-->
+                <!--<div class="swiper-slide" data-swiper-autoplay="11000">-->
+                    <!--<video muted="" src="../mp4_2021/4.mp4" autoplay="" loop=""></video>-->
+                <!--</div>-->
+                <div class="swiper-slide">
+                    <div class="img100"><a target="_blank" href=""><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87904.jpg" alt=""/></a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img100"><a target="_blank" href="https://www.infinitus.com.cn/c/2021-12-08/271050.shtml"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87889.jpg" alt=""/></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="wapbannerDot swiper-dot text-center"></div>
+    </div>
+    <!--banner e-->
+    <!--关于无限极 s-->
+    <div class="wap-about relative text-center overhide">
+        <a href="#">
+            <div class="position-full">
+                <div class="middle-box">
+                    <div class="middle-inner">
+                        <div class="width90">
+                            <div class="wap-title18 wap-title18-fff slideUp">
+                                <h3>关于无限极</h3>
+                                <p>李锦记健康产品集团旗下成员，成立于1992年，是一家立足健康养生产业，以中草药健康产品研发、生产、销售及服务为主的现代化大型企业。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wap-jt54"></div>
+            <div class="img100"><img src="../images_2021/wap02.jpg" alt=""/></div>
+        </a>
+    </div>
+    <!--关于无限极 e-->
+    <!--事业机会 s-->
+    <div class="wap-about relative text-center overhide">
+        <a href="#">
+            <div class="position-full">
+                <div class="middle-box">
+                    <div class="middle-inner">
+                        <div class="width90">
+                            <div class="wap-title18 wap-title18-fff slideUp">
+                                <h3>事业机会</h3>
+                                <p>选择无限极的理由——无限极的八大优势</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wap-jt54"></div>
+            <div class="img100"><img src="../images_2021/wap03.jpg" alt=""/></div>
+        </a>
+    </div>
+    <!--事业机会 e-->
+    <!--社会责任 s-->
+    <div class="wap-about relative text-center overhide">
+        <a href="#">
+            <div class="position-full">
+                <div class="middle-box">
+                    <div class="middle-inner">
+                        <div class="width90">
+                            <div class="wap-title18 wap-title18-fff wow slideUp">
+                                <h3>社会责任</h3>
+                                <p>无限极积极履行社会责任，努力为社会创造更多价值，先后开展了多个公益项目，累计捐款捐物超过2.66亿元人民币。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wap-jt54"></div>
+            <div class="img100"><img src="../images_2021/wap04.jpg" alt=""/></div>
+        </a>
+    </div>
+    <!--社会责任 e-->
+    <!--公司动态 s-->
+    <div class="wap-news padding-tb80 overhide wow slideUp">
+        <div class="width90">
+            <div class="wap-title18">
+                <h2>公司动态</h2>
+                <span>Company news</span>
+                <div class="i"></div>
+            </div>
+            <div class="text-right margin-b30">
+                <a class="gddt" href="#">更多动态 <img src="../images_2021/jt36.png" alt=""/></a>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="/c/2021-12-13/545968.shtml" target="_blank">
+                            <div class="relative">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87889.jpg" alt=""/></div>
+                            </div>
+                            <div class="wap-news-text">
+                                <h3>29载创业路，感恩有你</h3>
+                                <p>未来，无限极因你而更精彩！</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/c/2021-12-12/545971.shtml" target="_blank">
+                            <div class="relative">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87890.jpg" alt=""/></div>
+                            </div>
+                            <div class="wap-news-text">
+                                <h3>无限极携手新浪体育助力中国新生代街舞力量</h3>
+                                <p>无限极希望借助微博平台优势，将“四合理”的健康生活方式进行更广泛地传播，以及推出体型管理产品来帮助爱美的人们收获健康和快乐。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/c/2021-12-11/545750.shtml" target="_blank">
+                            <div class="relative">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87827.png?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+                            </div>
+                            <div class="wap-news-text">
+                                <h3>无限极全新女性护理品牌“轻盈跃”及首款新品正式发布！</h3>
+                                <p>轻盈跃旗下首款产品-轻盈跃芯护草本卫生巾系列产品在此次活动中惊喜亮相。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/c/2021-12-03/545753.shtml" target="_blank">
+                            <div class="relative">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87828.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+                            </div>
+                            <div class="wap-news-text">
+                                <h3>无限极携手微博健康打造硬核免疫力指南</h3>
+                                <p>调养免疫力，无限极一直在努力！</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/c/2021-12-03/545747.shtml" target="_blank">
+                            <div class="relative">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87826.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+                            </div>
+                            <div class="wap-news-text">
+                                <h3>共襄未来发展，无限极2021年度业务总监级会议隆重举行</h3>
+                                <p>用行动证明我们的志气！</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/c/2021-12-01/535295.shtml" target="_blank">
+                            <div class="relative">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/86640.jpg?watermark/1/image/aHR0cHM6Ly9jbXNxbi1zdGFnaW5nLmluZmluaXR1cy5jb20uY24vdXBsb2FkL3Jlc291cmNlcy9pbWFnZS8yMDE5LzAzLzE0LzU1NzI4LnBuZw==/gravity/SouthEast" alt=""/></div>
+                            </div>
+                            <div class="wap-news-text">
+                                <h3>行业专家和媒体溯源无限极道地三七</h3>
+                                <p>10月26日，由中华中医药学会主办，无限极（中国）中国有限公司、天方健（中国）药业有限公司承办的“2019无限极道地原料溯源之旅”暨“无限极道地药材供应基地”揭牌仪式在美丽的云南三七种植基地举行。</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center wapdot"></div>
+    </div>
+    <!--公司动态 e-->
+    <!--品牌与产品 s-->
+    <div class="wap-pp padding-tb80 overhide" style="background: url(../images_2021/001.jpg) no-repeat top;background-size: cover;">
+        <div class="width90">
+            <div class="wap-title18 wow slideUp">
+                <h2>品牌与产品</h2>
+                <span>Brands and products</span>
+                <div class="i"></div>
+            </div>
+            <ul class="brand img100 clear wow slideUp">
+
+
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P01/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87899.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://www.beautrio.top/"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87900.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P08/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87759.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P06/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87762.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P02/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87901.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P04/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87902.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/PW1/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87915.jpg" alt=""/></a></li>
+                <li class="wow slideUp"><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P11/P"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87833.jpg" alt=""/></a></li>
+
+            </ul>
+            <div class="rmcp wow slideUp">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide imgscale">
+                            <a class="" href="#">
+                                <div class="img100"><img src="https://cmsqn-dev.infinitus.com.cn/122/upload/resources/image/87920.jpg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wapdot text-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--品牌与产品 e-->
+    <!--附近店铺 s-->
+    <div class="padding-tb80 nearby">
+        <div class="width90">
+            <div class="relative wow slideUp">
+                <div class="wap-title18">
+                    <h2>附近店铺</h2>
+                    <span>Nearby shops</span>
+                    <div class="i"></div>
+                </div>
+                <a class="gddp" href="#"><img src="../images_2021/e2.png" alt=""/><span>更多店铺</span></a>
+            </div>
+            <ul class="fjdp wow slideUp" id="NearStoreList" style="visibility: visible; animation-name: slideUp;"><li><a href="javascript:;"><div class="fjdp-con"><h3>黄少*的专卖店</h3><p>电话：18925095433</p><p>地址：广东省广州市天河区保利威座北塔25层</p></div><div class="fjdp-r"><div class="juli"><img src="../images_2021/dw.png" alt=""><span>1.19km</span></div><div class="i" onclick="searchArea(113.270385,23.12471,'黄少*的专卖店','广东省广州市天河区保利威座北塔25层')"></div></div></a></li><li><a href="javascript:;"><div class="fjdp-con"><h3>周密*的专卖店</h3><p>电话：13672401154</p><p>地址：广东省广州市白云区保利威座北塔25层</p></div><div class="fjdp-r"><div class="juli"><img src="../images_2021/dw.png" alt=""><span>3.93km</span></div><div class="i" onclick="searchArea(113.262534,23.100914,'周密*的专卖店','广东省广州市白云区保利威座北塔25层')"></div></div></a></li><li><a href="javascript:;"><div class="fjdp-con"><h3>魏红*的专卖店</h3><p>电话：15920536839</p><p>地址：广东省广州市白云区保利威座北塔25层</p></div><div class="fjdp-r"><div class="juli"><img src="../images_2021/dw.png" alt=""><span>4.09km</span></div><div class="i" onclick="searchArea(113.26071,23.170742,'魏红*的专卖店','广东省广州市白云区保利威座北塔25层')"></div></div></a></li><li><a href="javascript:;"><div class="fjdp-con"><h3>黄洁*的专卖店</h3><p>电话：13926005713</p><p>地址：广东省广州市白云区保利威座北塔25层</p></div><div class="fjdp-r"><div class="juli"><img src="../images_2021/dw.png" alt=""><span>4.61km</span></div><div class="i" onclick="searchArea(113.2788056772193,23.17620498416192,'黄洁*的专卖店','广东省广州市白云区保利威座北塔25层')"></div></div></a></li><li><a href="javascript:;"><div class="fjdp-con"><h3>广州服务中心1</h3><p>电话：020-22645786</p><p>地址：广东省广州市天河区保利威座北塔25层9987号无限极广州服务中心（建店）</p></div><div class="fjdp-r"><div class="juli"><img src="../images_2021/dw.png" alt=""><span>5.09km</span></div><div class="i" onclick="searchArea(113.320904,23.130636,'广州服务中心1','广东省广州市天河区保利威座北塔25层9987号无限极广州服务中心（建店）')"></div></div></a></li></ul>
+        </div>
+    </div>
+    <div id="allmap"></div>
+    <!--附近店铺 e-->
+</div>
+<!--移动端 e-->
+<!--footer s-->
+<div class="footer">
+    <div class="width90">
+        <div class="footer-top relative">
+            <img class="footer-logo" src="https://nwww-dev.infinitus.com.cn/images_2021/logo-fff-new.png" alt="">
+            <div class="footer-nav clear">
+                <dl>
+
+                    <dt><span class="langel" chattr="走进无限极" ftattr="走進無限極" enattr="About Infinitus">走进无限极</span><i></i></dt>
+
+
+
+                    <dd><a href="/wxjgw/zjwxj/wxjqq/" class="langel" chattr="无限极全球" ftattr="無限極全球" enattr="Infinitus Global">无限极全球</a></dd>
+                    <dd><a href="/wxjgw/zjwxj/wxjzg/" class="langel" chattr="无限极中国" ftattr="無限極中國" enattr="Infinitus China">无限极中国</a></dd>
+                    <dd><a href="/wxjgw/zjwxj/gssm/" class="langel" chattr="公司使命" ftattr="公司使命" enattr="Mission">公司使命</a></dd>
+                    <dd><a href="/wxjgw/zjwxj/whyln/" class="langel" chattr="文化与理念" ftattr="文化與理念" enattr="CULTURE&nbsp;&amp; PHILOSOPHY">文化与理念</a></dd>
+                    <dd><a href="/wxjgw/zjwxj/wxjdgs/" class="langel" chattr="无限极的故事" ftattr="無限極的故事" enattr="INFINITUS'&nbsp;STORIES">无限极的故事</a></dd>
+                    <dd><a href="/zxcj2.0/zjwxj/dscjy/" class="langel" chattr="董事长寄语" ftattr="董事長寄語" enattr="Chairman's Message">董事长寄语</a></dd>
+
+                </dl>
+                <dl>
+
+                    <dt><span class="langel" chattr="品牌与产品" ftattr="品牌與產品" enattr="Brands &amp; Products">品牌与产品</span><i></i></dt>
+
+
+
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P01/P" class="langel" chattr="无限极" ftattr="無限極" enattr="INFINITUS">无限极</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P07/P" class="langel" chattr="萃雅" ftattr="萃雅" enattr="Beautrio">萃雅</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P08/P" class="langel" chattr="心维雅" ftattr="心維雅" enattr="VITABELLE">心维雅</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P06/P" class="langel" chattr="享优乐" ftattr="享優樂" enattr="BeneLife">享优乐</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P02/P" class="langel" chattr="植雅" ftattr="植雅" enattr="PHYTOCARE">植雅</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P04/P" class="langel" chattr="帮得佳" ftattr="幫得佳" enattr="Homemate">帮得佳</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/PW1/P" class="langel" chattr="养固健" ftattr="養固健" enattr="OriHerb">养固健</a></dd>
+                    <dd><a href="https://eproduct-dev.infinitus.com.cn/front/public/product/query/showProductCriteria/P11/P" class="langel" chattr="轻盈跃" ftattr="輕盈躍" enattr="ENLITHE">轻盈跃</a></dd>
+
+                </dl>
+                <dl>
+
+                    <dt><span class="langel" chattr="事业机会" ftattr="事業機會" enattr="Business Opportunity">事业机会</span><i></i></dt>
+
+
+
+                    <dd><a href="/wxjgw/syjh/bdys/" class="langel" chattr="八大优势" ftattr="八大優勢" enattr="Eight Advantages">八大优势</a></dd>
+                    <dd><a href="/zxcj2.0/gsyw/sywx/hwpx/zxzx/" class="langel" chattr="海外培训" ftattr="海外培訓" enattr="Overseas Training">海外培训</a></dd>
+                    <dd><a href="/zxcj2.0/gsyw/sywx/gfzq/ywsz/" class="langel" chattr="从业规范" ftattr="從業規範" enattr="Regulatory Compliance">从业规范</a></dd>
+                    <dd><a href="/wxjgw/syjh/jyx/" class="langel" chattr="极易学" ftattr="極易學" enattr="e-Learning">极易学</a></dd>
+
+                </dl>
+                <dl>
+
+                    <dt><span class="langel" chattr="公司动态" ftattr="公司動態" enattr="Newsroom">公司动态</span><i></i></dt>
+
+
+
+                    <dd><a href="/zxcj2.0/gsyw/gsdt/gsxw/" class="langel" chattr="公司新闻" ftattr="公司新聞" enattr="Corporate News">公司新闻</a></dd>
+                    <dd><a href="/zxcj2.0/gsyw/gsdt/mtbd/" class="langel" chattr="媒体报道" ftattr="媒體報導" enattr="Media Report">媒体报道</a></dd>
+                    <dd><a href="/zxcj2.0/gsyw/gsdt/dffc/fgs/" class="langel" chattr="分公司风采" ftattr="分公司風采" enattr="More about Our Branches">分公司风采</a></dd>
+                    <dd><a href="/zxcj2.0/gsyw/gsdt/djjmwl/" class="langel" chattr="打击假冒伪劣" ftattr="打擊假冒偽劣" enattr="Anti-Counterfeit">打击假冒伪劣</a></dd>
+
+                </dl>
+                <dl>
+
+                    <dt><span class="langel" chattr="社会责任" ftattr="社會責任" enattr="Social Responsibility">社会责任</span><i></i></dt>
+
+
+
+                    <dd><a href="/wxjgw/shzr/shzrtx/" class="langel" chattr="社会责任体系" ftattr="社會責任體系" enattr="Social Responsibility System">社会责任体系</a></dd>
+                    <dd><a href="/wxjgw/shzr/csrbg/" class="langel" chattr="企业社会责任报告" ftattr="企業社會責任報告" enattr="CSR Report">企业社会责任报告</a></dd>
+                    <dd><a href="/zxcj2.0/shzr/gydt/" class="langel" chattr="公益动态" ftattr="公益動態" enattr="CSR News">公益动态</a></dd>
+                    <dd><a href="/wxjgw/shzr/sljrgyjjh/" class="langel" chattr="思利及人公益基金会" ftattr="思利及人公益基金會" enattr="Si Li Ji Ren Foundation">思利及人公益基金会</a></dd>
+
+                </dl>
+                <dl>
+
+                    <dt class="langel" chattr="马上购买" ftattr="馬上購買" enattr="Buy Now">马上购买<i></i></dt>
+
+
+
+                    <dd><a href="/wxjgw/msgm/wsc/" target="_blank" class="langel" chattr="无限极微商城" ftattr="無限極微商城" enattr="Infinitus Fun Mall">无限极微商城</a></dd>
+                    <dd><a href="https://www-dev.infinituscloud.com.cn/front/cbec/public/showCbecHome" target="_blank" class="langel" chattr="全球购" ftattr="全球購" enattr="Global Buy">全球购</a></dd>.
+
+                </dl>
+                <dl>
+
+                    <a href="/zxcj2.0/gsyw/cpkx/shzx/shfw/">
+                        <dt><span class="langel" chattr="售后服务" ftattr="售後服務" enattr="After-Sale Service">售后服务</span><i></i></dt>
+                    </a>
+
+
+                    <a href="/wxjgw/dp/">
+                        <dt><span class="langel" chattr="各地店铺" ftattr="各地店鋪" enattr="All Shops">各地店铺</span><i></i></dt>
+                    </a>
+
+
+                    <a href="/zxcj2.0/fwdt/lxwm/fgs/zbyhwsc/">
+                        <dt><span class="langel" chattr="联系我们" ftattr="聯繫我們" enattr="Contact Us">联系我们</span><i></i></dt>
+                    </a>
+
+                </dl>
+                <dl>
+                    <dt>
+                        <span style="cursor: pointer;" onclick="memberLoginTo()" class="langel" chattr="会员入口" ftattr="會員入口" enattr="Members">会员入口</span>
+                        <i></i>
+                    </dt>
+                    <!-- <dt><span  class="langel" CHATTR="企业招聘" FTATTR="企業招聘" ENATTR="Career" >企业招聘</span><i></i></dt>-->
+                </dl>
+            </div>
+            <div class="kslj">
+                <h3>快速链接</h3>
+                <div class="kslj1">
+                    <a class="a1 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-gzh-new.jpg" alt=""></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极服务号</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wk-new.png" alt=""></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极微刊</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a3" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wb-new.jpg" alt=""></div>
+                                <p>扫一扫</p>
+                                <p>无限极中国微博</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a6" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-dy-new.jpg" alt=""></div>
+                                <p>扫一扫</p>
+                                <p>无限极抖音号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a9" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-sph-new.jpg" alt=""></div>
+                                <p>扫一扫</p>
+                                <p>无限极视频号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a10 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-xcx-new.jpg" alt=""></div>
+                                        <p>扫一扫</p>
+                                        <p>极有料</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wsc-new.png" alt=""></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极微商城</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="ks-app" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wxjapp-new.png" alt=""></div>
+                                <p>扫一扫</p>
+                                <p>无限极APP下载</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot clear">
+            <div class="fr footer-bot-b">
+                <div class="footer-link">
+                    <a href="https://www.lkkhpg.com/" target="_blank">李锦记健康产品集团</a><span>|</span>
+                    <a href="http://www.samr.gov.cn/" target="_blank">国家市场监督管理总局</a><span>|</span>
+                    <a href="https://eproduct.infinitus.com.cn/login?forward=/front/eproduct/qualityReport/query/showQualityReportIndex/P/P" target="_blank">产品批次报告查询</a><span>|</span>
+                    <a href="http://www.infinitus.com.cn/2014/1399486867324.jpg" target="_blank">国际联网备案登记证书</a>
+                    <br>
+                    <a href="http://zxpl.infinitus.com.cn/" target="_blank">直销信息披露</a><span>|</span>
+                    <a href="http://tsspxx.gsxt.gov.cn/gcbjp/tsspindex.xhtml" target="_blank">保健食品注册信息查询</a><span>|</span>
+                    <a href="http://app1.nmpa.gov.cn/data_nmpa/face3/dir.html?type=hzp" target="_blank">化妆品注册与备案信息查询</a><span>|</span>
+
+                    <a href="/c/2019-01-02/520366.shtml" target="_blank">企业证照</a>
+
+                </div>
+                <div class="bq">
+                    <span>版权所有©2017 无限极（中国）</span><a href="http://beian.miit.gov.cn/" target="_blank">[粤ICP备05041458号]</a><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602005995" target="_blank">粤公网安备44010602005995号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fixed-right">
+    <ul>
+        <li>
+            <div class="i img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/fixed-gzh.png" alt=""></div>
+            <div class="fixed-hide">
+                <div class="fixed-warp">
+                    <div class="fixed-pages">
+                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-gzh-new.jpg" alt=""></div>
+                        <p>扫一扫</p>
+                        <p>无限极服务号</p>
+                    </div>
+                    <div class="fixed-pages">
+                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wk-new.png" alt=""></div>
+                        <p>扫一扫</p>
+                        <p>无限极微刊</p>
+                    </div>
+                </div>
+                <div class="i"></div>
+            </div>
+        </li>
+        <li>
+            <div class="i img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/fixed-wb.png" alt=""></div>
+            <div class="fixed-hide">
+                <div class="fixed-warp">
+                    <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wb-new.jpg" alt=""></div>
+                    <p>扫一扫</p>
+                    <p>无限极中国微博</p>
+                </div>
+                <div class="i"></div>
+            </div>
+        </li>
+        <li>
+            <div class="i img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/fixed-dy.png" alt=""></div>
+            <div class="fixed-hide">
+                <div class="fixed-warp">
+                    <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-dy-new.jpg" alt=""></div>
+                    <p>扫一扫</p>
+                    <p>无限极抖音号</p>
+                </div>
+                <div class="i"></div>
+            </div>
+        </li>
+        <li>
+            <div class="i img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/fixed-sph.png" alt=""></div>
+            <div class="fixed-hide">
+                <div class="fixed-warp">
+                    <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-sph-new.jpg" alt=""></div>
+                    <p>扫一扫</p>
+                    <p>无限极视频号</p>
+                </div>
+                <div class="i"></div>
+            </div>
+        </li>
+        <li>
+            <div class="i img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/fixed-xcx.png" alt=""></div>
+            <div class="fixed-hide">
+                <div class="fixed-warp">
+                    <div class="fixed-pages">
+                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-xcx-new.jpg" alt=""></div>
+                        <p>扫一扫</p>
+                        <p>极有料</p>
+                    </div>
+                    <div class="fixed-pages">
+                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wsc-new.png" alt=""></div>
+                        <p>扫一扫</p>
+                        <p>无限极微商城</p>
+                    </div>
+                </div>
+                <div class="i"></div>
+            </div>
+        </li>
+        <li>
+            <div class="i img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/fixed-app.png" alt=""></div>
+            <div class="fixed-hide">
+                <div class="fixed-warp">
+                    <div class="fixed-pages">
+                        <div class="img100"><img src="https://nwww-dev.infinitus.com.cn/images_2021/code-wxjapp-new.png" alt=""></div>
+                        <p>扫一扫</p>
+                        <p>无限极APP下载</p>
+                    </div>
+                </div>
+                <div class="i"></div>
+            </div>
+        </li>
+    </ul>
+    <div class="fixed-tip">
+        <div class="fixed-tip-con">
+            <div class="i"></div>
+            <div class="i"></div>
+            <div class="i"></div>
+        </div>
+    </div>
+</div>
+<!--footer e-->
+<!--<script type="text/javascript" src="../js_2021/area.js"></script>-->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=gs0ZjBjw4GO673KUlMpPcnj23V2QpRfw"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=gs0ZjBjw4GO673KUlMpPcnj23V2QpRfw"></script>
+<!--<script type="text/javascript">_init_area();</script>-->
+<script language="javascript">
+    var ww=$(window).width();
+    if(ww<800){
+        $(".computer").remove();
+    }
+    var bannerleng=$(".banner .swiper-slide").length;
+    var newleng=$(".newplay .swiper-slide").length;
+    var shipinleng=$(".shipin .swiper-slide").length;
+    var banner=null;
+    var n3=3;
+    var sp80=80;
+    if(ww<1250){
+        sp80=40;
+    }
+    if(bannerleng>1){
+        banner = new Swiper('.banner .swiper-container',{
+            loop:true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:800,
+            pagination : '.bannerDot',
+            paginationClickable :true,
+            onSlideChangeStart: function(){
+                pcplay()
+            },
+        })
+        $(".bannerNext").click(function(){
+            banner.slideNext();
+        });
+    }else{
+        $(".bannerNext").hide();
+        $(".bannerDot").hide();
+        banner = new Swiper('.banner .swiper-container',{
+            onSlideChangeStart: function(){
+                pcplay()
+            },
+        })
+    }
+    function pcplay(){
+        var sw=$('.banner .swiper-slide');
+        for(var k=0;k<sw.length;k++){
+            var vd=$('.banner .swiper-slide').eq(k).find('video');
+            if(vd.length>0){
+                if(vd.parent(".swiper-slide-active").length>0){
+                    vd[0].currentTime=0;
+                    vd[0].play();
+                }else{
+                    vd[0].currentTime=0;
+                    vd[0].pause();
+                }
+            }
+
+        }
+    }
+    var newplay = new Swiper('.newplay .swiper-container',{
+        loop:true,
+        autoplay : 5000,
+        autoplayDisableOnInteraction : false,
+        speed:800,
+        slidesPerView : n3,
+        slidesPerGroup : n3,
+        prevButton:'.newBtn1',
+        nextButton:'.newBtn2',
+    })
+    $(".newplay .swiper-slide").hover(function(){
+        newplay.stopAutoplay();
+    }, function(){
+        newplay.startAutoplay();
+    });
+    var shipinlen=$(".shipin .swiper-slide").length;
+    if(shipinlen>1){
+        var shipin = new Swiper('.shipin .swiper-container',{
+            loop:true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:800,
+            prevButton:'.spBtn1',
+            nextButton:'.spBtn2',
+            pagination : '.shipinDot',
+            paginationClickable :true,
+
+        })
+    }else{
+        $(".spBtn").hide();
+        $(".shipinDot").hide();
+    }
+    var business=null;
+    var buslen=0;
+    function bus(){
+        buslen=$(".business-page.active .swiper-slide").length;
+        if(buslen>1){
+            $(".businessBtn").show();
+            business = new Swiper('.business-page.active .swiper-container',{
+                loop:true,
+                autoplay : 5000,
+                autoplayDisableOnInteraction : false,
+                prevButton:'.businessBtn1',
+                nextButton:'.businessBtn2',
+                effect : 'fade',
+                fade: {
+                    crossFade: true,
+                }
+            })
+        }else{
+            $(".businessBtn").hide();
+        }
+
+    }
+    bus();
+    $(".business-type li").click(function(){
+        var index=$(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".business-page").eq(index).addClass("active").siblings().removeClass("active");
+        bus();
+    });
+    var shzr = new Swiper('.shzr .swiper-container',{
+        spaceBetween : sp80,
+        slidesPerView : n3,
+        slidesPerGroup : n3,
+    })
+    $(".sousuo-list").click(function(){
+        $(this).toggleClass("active").find(".sousuo-a").stop().slideToggle();
+    });
+    $(".sousuo-a").on("click","a",function(){
+        var text=$(this).text();
+        $(this).parent().siblings().text(text);
+    })
+
+    $(document).click(function(e){
+        var target= $(e.target);
+        if(target.closest(".sousuo-list-people").length==0){
+            $(".sousuo-list-people").removeClass("active").find('.sousuo-a').slideUp();
+        }
+        if(target.closest(".sousuo-list-funcitoin").length==0){
+            $(".sousuo-list-funcitoin").removeClass("active").find('.sousuo-a').slideUp();
+        }
+        if(target.closest(".sousuo-list-protect").length==0){
+            $(".sousuo-list-protect").removeClass("active").find('.sousuo-a').slideUp();
+        }
+    });
+
+
+
+
+
+
+
+    //移动端 s
+    var rmcpLength=$(".rmcp .swiper-slide").length;
+    var wapbannerLength=$(".wap-banner .swiper-slide").length;
+    var wapbanner=null;
+    if(wapbannerLength>1){
+        wapbanner = new Swiper('.wap-banner .swiper-container',{
+            loop:true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:800,
+            paginationClickable :true,
+            pagination : '.wapbannerDot',
+            onSlideChangeStart: function(){
+                wapplay();
+            },
+        })
+    }else{
+        $(".wapbannerDot").hide();
+        wapbanner = new Swiper('.wap-banner .swiper-container',{
+            onSlideChangeStart: function(){
+                wapplay();
+            },
+        })
+    }
+    function wapplay(){
+        var sw=$('.wap-banner .swiper-slide');
+        for(var k=0;k<sw.length;k++){
+            var vd=$('.wap-banner .swiper-slide').eq(k).find('video');
+            if(vd.length>0){
+                if(vd.parent(".swiper-slide-active").length>0){
+                    vd[0].currentTime=0;
+                    vd[0].play();
+                }else{
+                    vd[0].currentTime=0;
+                    vd[0].pause();
+                }
+            }
+
+        }
+    }
+    var xinwen = new Swiper('.wap-news .swiper-container',{
+        loop:true,
+        autoplay : 5000,
+        autoplayDisableOnInteraction : false,
+        speed:800,
+        slidesPerView : 1.2,
+        slidesPerGroup : 1,
+        spaceBetween : '10%',
+        loopAdditionalSlides : 1,
+        pagination :'.wap-news .wapdot',
+        paginationClickable :true,
+        paginationBulletRender: function (swiper, index, className) {
+            return '<div class="' + className + '"><span></span><i></i></div>';
+        },
+    })
+    if(rmcpLength>1){
+        var rmcp = new Swiper('.rmcp .swiper-container',{
+            pagination : '.rmcp .wapdot',
+            paginationClickable :true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:600,
+            loop:true,
+            paginationBulletRender: function (swiper, index, className) {
+                return '<div class="' + className + '"><span></span><i></i></div>';
+            },
+        })
+        $(".rmcp .swiper-slide").hover(function(){
+            rmcp.stopAutoplay();
+        },function(){
+            rmcp.startAutoplay();
+        });
+    }else{
+        $(".rmcpDot").hide();
+    }
+
+    function setmap(){
+        var map = new BMap.Map("allmap"),marker;
+        var geolocation = new BMap.Geolocation();
+        geolocation.getCurrentPosition(function(r){
+            if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                var mk = new BMap.Marker(r.point);
+                map.addOverlay(mk);
+                map.panTo(r.point);
+                var point = new BMap.Point(r.point.lng,r.point.lat);
+                var geoc = new BMap.Geocoder();
+                geoc.getLocation(point, function(rs){
+                    var addComp = rs.addressComponents;
+                    //console.log(addComp.province,addComp.city,addComp.district);
+                    province = addComp.province;
+                    city = addComp.city;
+                    county = addComp.district;
+//                    alert(city)
+                });
+            }else{
+                alert('请允许定位');
+            }
+        },{enableHighAccuracy: true})
+    }
+    var k=0;
+    var windowHeight=$(window).height();
+    $(window).scroll(function(){
+        var scrollTop=$(window).scrollTop();
+        var it=$(".nearby").offset().top;
+//        console.log(scrollTop+"--"+it);
+
+        if(scrollTop+windowHeight>it && ww<800){
+            if(k==0){
+                setmap()
+                k=1;
+            }
+
+        }
+    })
+</script>
+<style type="text/css">
+    iframe{position: absolute;z-index: -1;}
+</style>
+</body>
+</html>

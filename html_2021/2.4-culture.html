@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css_2021/main.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/media.css?v=1.9"/>
+    <link rel="stylesheet" href="../css_2021/swiper.min.css"/>
+    <script src="../js_2021/jquery.js"></script>
+    <script src="../js_2021/swiper.min.js"></script>
+    <script src="../js_2021/fastclick.js"></script>
+    <!--[if IE]>
+    <script src="../js_2021/html5shiv.min.js"></script>
+    <script src="../js_2021/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js_2021/main.js?v=1.9"></script>
+    <script src="../js_2021/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+<!--header s-->
+<div class="header">
+    <a class="logo" href="index.html"><img src="../images_2021/logo.png" alt=""/></a>
+    <div class="header-con">
+        <div class="nav-box">
+            <ul class="nav clear">
+                <li><a class="nav-yi" href="#"><span>首页</span></a></li>
+                <li class="active">
+                    <a class="nav-yi" href="#"><span>走进无限极</span></a>
+                    <div class="nav-er">
+                        <a href="#">无限极全球</a>
+                        <a href="#">无限极中国</a>
+                        <a href="#">公司使命</a>
+                        <a href="#">文化与理念</a>
+                        <a href="#">无限极的故事</a>
+                        <a href="#">董事长寄语</a>
+                    </div>
+                </li>
+                <li><a class="nav-yi" href="#"><span>品牌与产品</span></a></li>
+                <li>
+                    <a class="nav-yi" href="#"><span>事业机会</span></a>
+                    <div class="nav-er">
+                        <a href="#">八大优势</a>
+                        <a href="#">科研实力</a>
+                        <a href="#">海外培训</a>
+                        <a href="#">从业规范</a>
+                        <a href="#">极易学</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>公司动态</span></a>
+                    <div class="nav-er">
+                        <a href="#">公司新闻</a>
+                        <a href="#">媒体报道</a>
+                        <a href="#">分公司风采</a>
+                        <a href="#">打击假冒伪劣</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>社会责任</span></a>
+                    <div class="nav-er">
+                        <a href="#">社会责任体系</a>
+                        <a href="#">公益动态</a>
+                        <a href="#">思利及人公益基金会</a>
+                        <a href="#">公益大事记</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-yi" href="#"><span>马上购买</span></a>
+                    <div class="nav-er">
+                        <a href="#">全球购</a>
+                        <a href="javascript:;">微商城
+                            <div class="nav-code">
+                                <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header-area clear">
+            <div class="entry fl">
+                <!--<a href="#"><img src="../images_2021/e1.png" alt=""/><span>售后</span></a>-->
+                <a href="#"><img src="../images_2021/e3.png" alt=""/><span>会员</span></a>
+                <a href="#"><img src="../images_2021/e2.png" alt=""/><span>店铺</span></a>
+            </div>
+            <div class="language fr">
+                <div class="i"></div>
+                <div class="earth"></div>
+                <a class="language-val" href="javascript:;">中</a>
+                <div class="language-box">
+                    <a href="javascript:;">繁</a>
+                    <a href="javascript:;">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-handler" class="menu-handler">
+        <span class="burger burger-1 trans"></span>
+        <span class="burger burger-2 trans-fast"></span>
+        <span class="burger burger-3 trans"></span>
+    </div>
+</div>
+<!--header e-->
+<!--banner s-->
+<div class="banner relative">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/about-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/about-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <div class="img100"><img src="../images_2021/about-ban.jpg" alt=""/></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-dot text-center bandot"></div>
+</div>
+<script>
+    var bannerleng=$(".banner .swiper-slide").length;
+    var banner=null;
+    if(bannerleng>1){
+        banner = new Swiper('.banner .swiper-container',{
+            loop:true,
+            autoplay : 5000,
+            autoplayDisableOnInteraction : false,
+            speed:800,
+            pagination : '.bandot',
+            paginationClickable :true,
+        })
+    }else{
+        $(".bandot").hide();
+    }
+</script>
+<!--banner e-->
+<!--导航 s-->
+<div class="ny-nav">
+    <div class="ny-navs">
+        <div class="width90">
+            <a href="#">无限极全球</a>
+            <a href="#">无限极中国</a>
+            <a href="#">公司使命</a>
+            <a class="active" href="#">文化与理念</a>
+            <a href="#">无限极的故事</a>
+            <a href="#">董事长寄语</a>
+        </div>
+    </div>
+</div>
+<!--导航 e-->
+<div class="padding-tb40">
+    <div class="width90">
+        <div class="title24 text-center wow slideUp">
+            <h2>文化与理念</h2>
+            <span>CULTURE & PHILOSOPHY</span>
+            <div class="i"></div>
+        </div>
+    </div>
+    <!--独特的企业文化 s-->
+    <div class="width90 wenhua-width90">
+        <div class="wh zindex7 relative">
+            <div class="title36 text-center wow slideUp">
+                <h3>独特的企业文化</h3>
+            </div>
+            <ul class="wh-list clear">
+                <li class="wow slideUp">
+                    <h4>核心价值观“思利及人</h4>
+                    <p>“思利及人”是百年民族企业李锦记的文化基因和经营秘诀，也是无限极的核心价值观，意思是“做事先思考如何有利于我们大家”，包括三个要素：</p>
+                    <p>直升机思维：从“我”到“我们”的思维方式</p>
+                    <p>换位思考：走出“我”的局限，站在对方的角度和整体的角度来思考</p>
+                    <p>关注对方感受：让对方感到尊重，取得对方的认同与参与</p>
+                </li>
+                <li class="wow slideUp">
+                    <h4>自动波领导模式</h4>
+                    <p>“自动波领导模式”是无限极总结二十多年的企业经营管理经验而创造的一种领导模式，旨在让人才感到“爽”并发挥潜能，从而吸引人才，保障企业的持续经营。它包括六个方面的内容：选对人才、高信氛围、高效团队、共同目标、有效授权、教练育才。</p>
+                </li>
+                <li class="wow slideUp">
+                    <h4>永远创业”精神</h4>
+                    <p>“永远创业”精神是李锦记的企业精神，意思是：不断保持创业的激情，不断突破，做自己没有做过的事情，去创造新的成就。无限极传承发扬并丰富了这一精神的具体内容，包括：6677、突破创新、永不封顶、效益导向。</p>
+                </li>
+            </ul>
+            <div class="position-full position-full-bg  pc-show" style="background: url(../images_2021/wh.jpg) no-repeat bottom;background-size: cover;"></div>
+            <div class="position-full position-full-bg wap-show" style="background: url(../images_2021/wh-1.jpg) no-repeat bottom;background-size: cover;"></div>
+        </div>
+    </div>
+    <!--独特的企业文化 e-->
+    <!--独特的健康理念 s-->
+    <div class="padding-tb80">
+        <div class="width90">
+            <div class="title36 margin-b60 text-center wow slideUp">
+                <h3>独特的健康理念</h3>
+            </div>
+            <div class="jkln-des16 des16 text-center wow slideUp">
+                <p>“养生固本健康人生”是无限极独特的健康理念，根植于中华数千年优秀的养生文化，倡导“三调养四合理”，为社会大众提供了一套简单、实用的养生方法，更好地满足了现代人对健康生活的需求。</p>
+            </div>
+            <div class="padding-tb80 text-center">
+                <div class="ysbg wow slideUp">
+                    <div class="title36">
+                        <h3>养生固本</h3>
+                    </div>
+                    <p>养生固本，养的是“生”，是生命、生存；固的是“本”，是人体内在的生命力。</p>
+                </div>
+                <!--<div class="max100 ysbg-img wow slideUp"><img src="../images_2021/laotou.png" alt=""/></div>-->
+            </div>
+            <ul class="yang clear">
+                <li class="relative zindex7 wow slideUp">
+                    <div class="img100"><img src="../images_2021/yang1.jpg" alt=""/></div>
+                    <div class="yang-bot yang-bot1 clear">
+                        <h3>三调养：正气、阴阳、脏腑的调养</h3>
+                        <h4>正气</h4>
+                        <p>人体生理功能的总称，包括机体对环境的适应能力、抗邪能力和康复能力。扶正气，是健康的前提。</p>
+                        <h4>阴阳</h4>
+                        <p>中医学以阴阳的对立、互根、消长和转化规律，认识和说明生命、健康和疾病。平阴阳，是健康的关键。</p>
+                        <h4>脏腑</h4>
+                        <p>人体内脏的总称，调脏腑，是健康的基础。（正气、阴阳、脏腑的概念来源于：GB/T20348-2006中华人民共和国国家标准中医基础理论术语）</p>
+                    </div>
+                </li>
+                <li class="relative zindex7 wow slideUp">
+                    <div class="img100"><img src="../images_2021/yang2.jpg" alt=""/></div>
+                    <div class="yang-bot yang-bot2 clear">
+                        <h3>四合理：饮食、起居、运动、情志的合理</h3>
+                        <div class="siheli clear">
+                            <div class="sihelis">
+                                <p><span>饮食有节——</span>结构合理，定时适量，温热适宜。</p>
+                                <p><span>起居有常——</span>科学睡眠，劳逸结合，生活规律。</p>
+                                <p><span>运动有度——</span>积极运动，因人而异，持之以恒。</p>
+                                <p><span>情志有衡——</span>平和心态，良好情趣，远离陋习。</p>
+                            </div>
+                            <div class="sihelis">
+                                <span>四合理行动建议</span>
+                                <p>多菜少肉七分饱，充足睡眠子午觉</p>
+                                <p>每天行走一万步，正面思维心态好</p>
+                                <p>养生固本四合理，健康人生无限极</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--独特的健康理念 e-->
+    <!--健康人生 s-->
+    <div class="padding-tb60 jkrs-box">
+        <div class="width90">
+            <div class="title36 text-center margin-b60 wow slideUp">
+                <h3>健康人生</h3>
+            </div>
+            <div class="des16 jkln-des16 text-center wow slideUp">
+                <p>健康人生是无限极健康理念的重要内容，也是无限极使命实践的必然结果。当人们处于健康、家庭、事业三者的平衡，时间、财富、精神的富足，个人、集体和社会的和谐的状态，就会感到开心、快乐、美满与幸福。</p>
+            </div>
+            <div class="jkrs-bot">
+                <div class="img100 pc-show wow slideUp"><img src="../images_2021/jkrs.jpg" alt=""/></div>
+                <div class="img100 wap-show wow slideUp"><img src="../images_2021/jkrs-1.jpg" alt=""/></div>
+                <ul class="jkrs-list">
+                    <li class="wow slideUp">
+                        <div class="jkrs-warp">
+                            <h4>健康、家庭、事业的平衡</h4>
+                            <p>健康是生命的支柱，有了健康，家庭和事业才有发展基础。</p>
+                            <p>家庭是生命的归宿，有了家庭，健康和事业才有坚强后盾。</p>
+                            <p>事业是生命的价值,有了事业，家庭和健康才有稳固支撑。</p>
+                        </div>
+                    </li>
+                    <li class="wow slideUp">
+                        <div class="jkrs-warp">
+                            <h4>时间、财富、精神的富足</h4>
+                            <p>时间富足：有充裕的时间做自己喜欢的事情。</p>
+                            <p>财富富足：拥有自主有余的财富，既保障自己，又帮助他人。</p>
+                            <p>精神富足：有明确的价值观和目标,人生有追求。</p>
+                        </div>
+                    </li>
+                    <li class="wow slideUp">
+                        <div class="jkrs-warp">
+                            <h4>个人、集体、社会的和谐</h4>
+                            <p>个人价值只有在集体中才能实现；集体只有顺应社会发展才能成长壮大；社会发展离不开个人和集体的贡献。</p>
+                            <p>只有个人、集体、社会的和谐，才有共同的发展。</p>
+                            <p>个人要发扬集体合作精神，承担社会责任，才能成就健康人生。</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="des16 jkln-des16 text-center wow slideUp">
+                    <p>了解更多内容请阅由中国医药科技出版社出版、王新陆教授著述的《养生固本健康人生》书籍。2015年，该书入选国家新闻出版广电总局“首届向全国推荐中华优秀传统文化普及图书”。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--健康人生 e-->
+</div>
+<!--footer s-->
+<div class="footer">
+    <div class="width90">
+        <div class="footer-top relative">
+            <img class="footer-logo" src="../images_2021/logo-fff.png" alt=""/>
+            <div class="footer-nav clear">
+                <dl>
+                    <dt>走进无限极<i></i></dt>
+                    <dd><a href="#">无限极全球</a></dd>
+                    <dd><a href="#">无限极中国</a></dd>
+                    <dd><a href="#">公司使命</a></dd>
+                    <dd><a href="#">董事长寄语</a></dd>
+                </dl>
+                <dl>
+                    <dt>品牌与产品<i></i></dt>
+                    <dd><a href="#">无限极</a></dd>
+                    <dd><a href="#">养固健</a></dd>
+                    <dd><a href="#">萃雅</a></dd>
+                    <dd><a href="#">心维雅</a></dd>
+                    <dd><a href="#">植雅</a></dd>
+                    <dd><a href="#">享优乐</a></dd>
+                    <dd><a href="#">帮得佳</a></dd>
+                </dl>
+                <dl>
+                    <dt>事业机会<i></i></dt>
+                    <dd><a href="#">八大优势</a></dd>
+                    <dd><a href="#">科研实力</a></dd>
+                    <dd><a href="#">海外培训</a></dd>
+                    <dd><a href="#">从业规范</a></dd>
+                    <dd><a href="#">极易学</a></dd>
+                </dl>
+                <dl>
+                    <dt>公司动态<i></i></dt>
+                    <dd><a href="#">公司新闻</a></dd>
+                    <dd><a href="#">媒体报道</a></dd>
+                    <dd><a href="#">分公司风采</a></dd>
+                    <dd><a href="#">打击假冒伪劣</a></dd>
+                </dl>
+                <dl>
+                    <dt>社会责任<i></i></dt>
+                    <dd><a href="#">社会责任体系</a></dd>
+                    <dd><a href="#">公益动态</a></dd>
+                    <dd><a href="#">思利及人公益基金会</a></dd>
+                    <dd><a href="#">公益大事记</a></dd>
+                </dl>
+                <dl>
+                    <dt>马上购买<i></i></dt>
+                    <dd><a href="#">全球购</a></dd>
+                    <dd>
+                        <a href="javascript:;">微商城
+                            <div class="nav-code">
+                                <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                            </div>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务<i></i></dt>
+                    <dt>各地店铺<i></i></dt>
+                    <dt>联系我们 <i></i></dt>
+                </dl>
+                <dl>
+                    <dt>会员入口<i></i></dt>
+                    <dt>企业招聘<i></i></dt>
+                </dl>
+            </div>
+            <div class="kslj">
+                <h3>快速链接</h3>
+                <div class="kslj1">
+                    <a class="a1 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极公众号</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极公众号</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a3" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-wb.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极微博</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a6" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-dy.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极抖音号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a9" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-sph.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极视频号</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="a10 code-two" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="clear">
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极小程序</p>
+                                    </div>
+                                    <div class="code-two-pages">
+                                        <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                        <p>扫一扫</p>
+                                        <p>无限极小程序</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="ks-app" href="javascript:;">
+                        <div class="kslj1-con">
+                            <div class="fixed-warp">
+                                <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                                <p>扫一扫</p>
+                                <p>无限极APP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a class="appxia" href="#">商城app下载</a>
+            </div>
+        </div>
+        <div class="footer-bot clear">
+            <div class="fr footer-bot-b">
+                <div class="footer-link">
+                    <a href="#">李锦记健康产品集团</a><span>|</span>
+                    <a href="#">国家市场监督管理总局</a><span>|</span>
+                    <a href="#">产品批次报告查询</a><span>|</span>
+                    <a href="#">国际联网备案登记证书</a>
+                    <br/>
+                    <a href="#">直销信息披露</a><span>|</span>
+                    <a href="#">保健食品注册信息查询</a><span>|</span>
+                    <a href="#">化妆品注册与备案信息查询</a>
+                </div>
+                <div class="bq">
+                    <span>版权所有©2017 无限极（中国）</span><a href="#">[粤ICP备05041458号]</a><a href="#">粤公网安备44010602005995号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="fixed-right">
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-gzh.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极公众号</p>
+                </div>
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-gzh.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极公众号</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-wb.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-wb.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极微博</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-dy.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-dy.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极抖音号</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-sph.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="img100"><img src="../images_2021/code-sph.jpg" alt=""/></div>
+                <p>扫一扫</p>
+                <p>无限极视频号</p>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-xcx.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极小程序</p>
+                </div>
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极小程序</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+    <li>
+        <div class="i img100"><img src="../images_2021/fixed-app.png" alt=""/></div>
+        <div class="fixed-hide">
+            <div class="fixed-warp">
+                <div class="fixed-pages">
+                    <div class="img100"><img src="../images_2021/code-xcx.jpg" alt=""/></div>
+                    <p>扫一扫</p>
+                    <p>无限极APP</p>
+                </div>
+            </div>
+            <div class="i"></div>
+        </div>
+    </li>
+</ul>
+<!--footer e-->
+</body>
+</html>
